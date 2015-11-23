@@ -83,6 +83,9 @@ Dependencies
 ------------
 
 -   [hswong3i.apt](https://galaxy.ansible.com/detail#/role/5970)
+-   [hswong3i.locales](https://galaxy.ansible.com/detail#/role/6008)
+-   [hswong3i.ntp](https://galaxy.ansible.com/detail#/role/6131)
+-   [hswong3i.tzdata](https://galaxy.ansible.com/detail#/role/6087)
 
 License
 -------
