@@ -3,6 +3,8 @@
 
 - src: hswong3i.apt
 
+- src: hswong3i.hostname
+
 - src: hswong3i.locales
 
 - src: hswong3i.tzdata

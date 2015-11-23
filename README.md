@@ -67,13 +67,13 @@ Now we can bootstrap Ansible's roles, vars and hosts by executing:
     $ scripts/bootstrap-vars.sh
     $ scripts/bootstrap-hosts.sh
 
-By default the scripts deploy only Ubuntu and PostgreSQL. At this point
+By default the scripts deploy only general Ubuntu setup. At this point
  you may optionally adjuct which services are deployed within your AIO
  build. Look at the `group_vars/all` and `hosts` for more details. For
- example, if you'd like to upgrade your Ubuntu set the `ubuntu_upgrade`
- as `true` at `group_vars/all`:
+ example, if you'd like to upgrade your Ubuntu set the `apt_upgrade`
+ as `full` at `group_vars/all`:
 
-    ubuntu_upgrade: true
+    apt_upgrade: full
 
 Finally, run the plabooks by executing:
 
@@ -83,6 +83,7 @@ Dependencies
 ------------
 
 -   [hswong3i.apt](https://galaxy.ansible.com/detail#/role/5970)
+-   [hswong3i.hostname](https://galaxy.ansible.com/detail#/role/6152)
 -   [hswong3i.locales](https://galaxy.ansible.com/detail#/role/6008)
 -   [hswong3i.ntp](https://galaxy.ansible.com/detail#/role/6131)
 -   [hswong3i.tzdata](https://galaxy.ansible.com/detail#/role/6087)
