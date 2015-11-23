@@ -7,6 +7,8 @@
 
 - src: hswong3i.locales
 
+- src: hswong3i.ntp
+
 - src: hswong3i.tzdata
 
-- src: hswong3i.ntp
+- src: hswong3i.ufw
