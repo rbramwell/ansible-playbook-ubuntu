@@ -1,0 +1,7 @@
+---
+# shared playbook for ufw setup
+
+- hosts: ufw
+  remote_user: root
+  roles:
+    - hswong3i.ufw

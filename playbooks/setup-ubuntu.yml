@@ -1,6 +1,8 @@
 ---
 # deployment playbook for ubuntu
 
+- include: hostname-install.yml
 - include: locales-install.yml
-- include: tzdata-install.yml
 - include: ntp-install.yml
+- include: tzdata-install.yml
+- include: ufw-install.yml

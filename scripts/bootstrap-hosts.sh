@@ -14,10 +14,13 @@ localhost   ansible_connection=local
 [locales]
 localhost   ansible_connection=local
 
+[ntp]
+localhost   ansible_connection=local
+
 [tzdata]
 localhost   ansible_connection=local
 
-[ntp]
+[ufw]
 localhost   ansible_connection=local
 
 EOF
