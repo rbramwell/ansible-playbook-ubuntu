@@ -1,0 +1,6 @@
+---
+# deployment playbook for ubuntu
+
+- include: locales-install.yml
+- include: tzdata-install.yml
+- include: ntp-install.yml
