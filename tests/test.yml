@@ -1,0 +1,10 @@
+---
+# test file for bamboo
+
+- hosts: localhost
+  remote_user: root
+  roles:
+    - hswong3i.apt
+    - hswong3i.locales
+    - hswong3i.tzdata
+    - hswong3i.ntp
