@@ -6,3 +6,5 @@
 - include: ntp-install.yml
 - include: tzdata-install.yml
 - include: ufw-install.yml
+- include: usermin-install.yml
+- include: webmin-install.yml
