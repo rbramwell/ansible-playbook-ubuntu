@@ -1,0 +1,7 @@
+---
+# shared playbook for usermin setup
+
+- hosts: usermin
+  remote_user: root
+  roles:
+    - hswong3i.usermin

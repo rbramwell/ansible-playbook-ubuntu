@@ -12,3 +12,7 @@
 - src: hswong3i.tzdata
 
 - src: hswong3i.ufw
+
+- src: hswong3i.webmin
+
+- src: hswong3i.usermin

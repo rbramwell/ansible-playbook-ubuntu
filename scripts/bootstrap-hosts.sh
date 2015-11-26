@@ -23,4 +23,10 @@ localhost   ansible_connection=local
 [ufw]
 localhost   ansible_connection=local
 
+[usermin]
+localhost   ansible_connection=local
+
+[webmin]
+localhost   ansible_connection=local
+
 EOF
