@@ -2,17 +2,10 @@
 # roles file for ubuntu
 
 - src: hswong3i.apt
-
 - src: hswong3i.hostname
-
 - src: hswong3i.locales
-
 - src: hswong3i.ntp
-
 - src: hswong3i.tzdata
-
 - src: hswong3i.ufw
-
-- src: hswong3i.webmin
-
 - src: hswong3i.usermin
+- src: hswong3i.webmin

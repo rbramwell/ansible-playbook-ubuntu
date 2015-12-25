@@ -1,0 +1,32 @@
+[submodule "roles/hswong3i.apt"]
+	path = roles/hswong3i.apt
+	url = https://github.com/pantarei/ansible-role-apt.git
+	branch = master
+[submodule "roles/hswong3i.hostname"]
+	path = roles/hswong3i.hostname
+	url = https://github.com/pantarei/ansible-role-hostname.git
+	branch = master
+[submodule "roles/hswong3i.locales"]
+	path = roles/hswong3i.locales
+	url = https://github.com/pantarei/ansible-role-locales.git
+	branch = master
+[submodule "roles/hswong3i.ntp"]
+	path = roles/hswong3i.ntp
+	url = https://github.com/pantarei/ansible-role-ntp.git
+	branch = master
+[submodule "roles/hswong3i.tzdata"]
+	path = roles/hswong3i.tzdata
+	url = https://github.com/pantarei/ansible-role-tzdata.git
+	branch = master
+[submodule "roles/hswong3i.ufw"]
+	path = roles/hswong3i.ufw
+	url = https://github.com/pantarei/ansible-role-ufw.git
+	branch = master
+[submodule "roles/hswong3i.usermin"]
+	path = roles/hswong3i.usermin
+	url = https://github.com/pantarei/ansible-role-usermin.git
+	branch = master
+[submodule "roles/hswong3i.webmin"]
+	path = roles/hswong3i.webmin
+	url = https://github.com/pantarei/ansible-role-webmin.git
+	branch = master
