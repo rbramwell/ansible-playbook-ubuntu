@@ -7,4 +7,6 @@ cd $DIR/../
 
 # Fetch all roles with latest version.
 rm -rf roles
-ansible-galaxy install --force -r .roles.yml
+git checkout -- roles
+git submodule init
+git submodule update --remote
