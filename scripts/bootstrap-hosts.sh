@@ -8,6 +8,9 @@ cd $DIR/../
 # Copy hosts files from template.
 echo -e "# Updated on `date`" >> hosts
 cat >> hosts <<-EOF
+#[apt]
+#localhost   ansible_connection=local
+
 #[hostname]
 #localhost   ansible_connection=local
 
