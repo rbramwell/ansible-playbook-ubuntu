@@ -1,6 +1,7 @@
 ---
 # deployment playbook for ubuntu
 
+- include: apt-install.yml
 - include: hostname-install.yml
 - include: locales-install.yml
 - include: ntp-install.yml
