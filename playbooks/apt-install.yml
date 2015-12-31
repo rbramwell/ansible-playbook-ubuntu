@@ -1,0 +1,7 @@
+---
+# shared playbook for apt setup
+
+- hosts: apt
+  remote_user: root
+  roles:
+    - hswong3i.apt
