@@ -8,20 +8,35 @@ cd $DIR/../
 # Copy hosts files from template.
 echo -e "# Updated on `date`" >> hosts
 cat >> hosts <<-EOF
-#[apt]
+#[apache2]
 #localhost   ansible_connection=local
+
+[apt]
+localhost   ansible_connection=local
 
 #[hostname]
 #localhost   ansible_connection=local
 
-#[locales]
+#[java]
 #localhost   ansible_connection=local
 
-#[ntp]
+[locales]
+localhost   ansible_connection=local
+
+#[mysql]
 #localhost   ansible_connection=local
 
-#[tzdata]
+[ntp]
+localhost   ansible_connection=local
+
+#[php]
 #localhost   ansible_connection=local
+
+#[postgresql]
+#localhost   ansible_connection=local
+
+[tzdata]
+localhost   ansible_connection=local
 
 #[ufw]
 #localhost   ansible_connection=local

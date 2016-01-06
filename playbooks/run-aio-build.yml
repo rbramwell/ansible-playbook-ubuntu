@@ -1,0 +1,28 @@
+---
+# deployment playbook for ubuntu
+
+- include: apache2-aio.yml
+
+- include: apt-aio.yml
+
+- include: hostname-aio.yml
+
+- include: java-aio.yml
+
+- include: locales-aio.yml
+
+- include: mysql-aio.yml
+
+- include: ntp-aio.yml
+
+- include: php-aio.yml
+
+- include: postgresql-aio.yml
+
+- include: tzdata-aio.yml
+
+- include: ufw-aio.yml
+
+- include: usermin-aio.yml
+
+- include: webmin-aio.yml
