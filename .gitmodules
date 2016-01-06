@@ -30,3 +30,27 @@
 	path = roles/hswong3i.webmin
 	url = https://github.com/pantarei/ansible-role-webmin.git
 	branch = master
+[submodule "roles/hswong3i.apache2"]
+	path = roles/hswong3i.apache2
+	url = https://github.com/pantarei/ansible-role-apache2.git
+	branch = master
+[submodule "roles/hswong3i.java"]
+	path = roles/hswong3i.java
+	url = https://github.com/pantarei/ansible-role-java.git
+	branch = master
+[submodule "roles/hswong3i.mysql"]
+	path = roles/hswong3i.mysql
+	url = https://github.com/pantarei/ansible-role-mysql.git
+	branch = master
+[submodule "roles/hswong3i.php"]
+	path = roles/hswong3i.php
+	url = https://github.com/pantarei/ansible-role-php.git
+	branch = master
+[submodule "roles/hswong3i.php_fpm"]
+	path = roles/hswong3i.php_fpm
+	url = https://github.com/pantarei/ansible-role-php-fpm.git
+	branch = master
+[submodule "roles/hswong3i.postgresql"]
+	path = roles/hswong3i.postgresql
+	url = https://github.com/pantarei/ansible-role-postgresql.git
+	branch = master

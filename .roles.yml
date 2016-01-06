@@ -1,10 +1,16 @@
 ---
 # roles file for ubuntu
 
+- src: hswong3i.apache2
 - src: hswong3i.apt
 - src: hswong3i.hostname
+- src: hswong3i.java
 - src: hswong3i.locales
+- src: hswong3i.mysql
 - src: hswong3i.ntp
+- src: hswong3i.php
+- src: hswong3i.php_fpm
+- src: hswong3i.postgresql
 - src: hswong3i.tzdata
 - src: hswong3i.ufw
 - src: hswong3i.usermin
