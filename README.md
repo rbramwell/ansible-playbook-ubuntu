@@ -77,17 +77,25 @@ By default the scripts deploy only general Ubuntu setup. At this point
 
 Finally, run the plabooks by executing:
 
-    $ scripts/run-playbooks.sh
+    $ ansible-playbook -i hosts playbooks/run-aio-build.yml
 
 Dependencies
 ------------
 
--   [hswong3i.apt](https://galaxy.ansible.com/detail#/role/5970)
--   [hswong3i.hostname](https://galaxy.ansible.com/detail#/role/6152)
--   [hswong3i.locales](https://galaxy.ansible.com/detail#/role/6008)
--   [hswong3i.ntp](https://galaxy.ansible.com/detail#/role/6131)
--   [hswong3i.tzdata](https://galaxy.ansible.com/detail#/role/6087)
--   [hswong3i.ufw](https://galaxy.ansible.com/detail#/role/6153)
+-   [hswong3i.apache2](https://github.com/pantarei/ansible-role-apache2)
+-   [hswong3i.apt](https://github.com/pantarei/ansible-role-apt)
+-   [hswong3i.hostname](https://github.com/pantarei/ansible-role-hostname)
+-   [hswong3i.java](https://github.com/pantarei/ansible-role-java)
+-   [hswong3i.locales](https://github.com/pantarei/ansible-role-locales)
+-   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
+-   [hswong3i.ntp](https://github.com/pantarei/ansible-role-ntp)
+-   [hswong3i.php](https://github.com/pantarei/ansible-role-php)
+-   [hswong3i.php_fpm](https://github.com/pantarei/ansible-role-php-fpm)
+-   [hswong3i.postgresql](https://github.com/pantarei/ansible-role-postgresql)
+-   [hswong3i.tzdata](https://github.com/pantarei/ansible-role-tzdata)
+-   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
+-   [hswong3i.usermin](https://github.com/pantarei/ansible-role-usermin)
+-   [hswong3i.webmin](https://github.com/pantarei/ansible-role-webmin)
 
 License
 -------
