@@ -1,28 +1,14 @@
 ---
 # deployment playbook for ubuntu
 
-- include: apt-aio.yml
+# core packages
+- include: run-core-build.yml
 
-- include: hostname-aio.yml
-
-- include: locales-aio.yml
-
-- include: ntp-aio.yml
-
-- include: tzdata-aio.yml
-
-- include: ufw-aio.yml
-
-- include: java-aio.yml
-
-- include: apache2-aio.yml
-
-- include: mysql-aio.yml
-
-- include: php-aio.yml
-
-- include: postgresql-aio.yml
-
-- include: usermin-aio.yml
-
-- include: webmin-aio.yml
+# service/shared packages
+- include: java-core.yml
+- include: apache2-core.yml
+- include: php-core.yml
+- include: mysql-core.yml
+- include: postgresql-core.yml
+- include: usermin-core.yml
+- include: webmin-core.yml

@@ -9,7 +9,6 @@
 - src: hswong3i.mysql
 - src: hswong3i.ntp
 - src: hswong3i.php
-- src: hswong3i.php_fpm
 - src: hswong3i.postgresql
 - src: hswong3i.tzdata
 - src: hswong3i.ufw
