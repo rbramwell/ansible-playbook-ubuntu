@@ -90,7 +90,6 @@ Dependencies
 -   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
 -   [hswong3i.ntp](https://github.com/pantarei/ansible-role-ntp)
 -   [hswong3i.php](https://github.com/pantarei/ansible-role-php)
--   [hswong3i.php_fpm](https://github.com/pantarei/ansible-role-php-fpm)
 -   [hswong3i.postgresql](https://github.com/pantarei/ansible-role-postgresql)
 -   [hswong3i.tzdata](https://github.com/pantarei/ansible-role-tzdata)
 -   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
