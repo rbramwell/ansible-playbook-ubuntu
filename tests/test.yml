@@ -12,7 +12,6 @@
     - hswong3i.mysql
     - hswong3i.ntp
     - hswong3i.php
-    - hswong3i.php_fpm
     - hswong3i.postgresql
     - hswong3i.tzdata
     - hswong3i.ufw

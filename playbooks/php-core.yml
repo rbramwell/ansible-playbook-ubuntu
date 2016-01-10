@@ -5,4 +5,3 @@
   remote_user: root
   roles:
     - hswong3i.php
-    - hswong3i.php_fpm

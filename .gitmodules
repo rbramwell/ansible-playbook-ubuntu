@@ -46,10 +46,6 @@
 	path = roles/hswong3i.php
 	url = https://github.com/pantarei/ansible-role-php.git
 	branch = master
-[submodule "roles/hswong3i.php_fpm"]
-	path = roles/hswong3i.php_fpm
-	url = https://github.com/pantarei/ansible-role-php-fpm.git
-	branch = master
 [submodule "roles/hswong3i.postgresql"]
 	path = roles/hswong3i.postgresql
 	url = https://github.com/pantarei/ansible-role-postgresql.git

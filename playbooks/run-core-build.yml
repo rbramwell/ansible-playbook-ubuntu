@@ -1,0 +1,10 @@
+---
+# deployment playbook for ubuntu
+
+# core packages
+- include: apt-core.yml
+- include: ufw-core.yml
+- include: hostname-core.yml
+- include: locales-core.yml
+- include: tzdata-core.yml
+- include: ntp-core.yml
