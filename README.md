@@ -10,7 +10,7 @@ Ansible Playbook for Ubuntu Installation.
 Requirements
 ------------
 
-This playbook require Ansible 1.9 or higher.
+This playbook require Ansible 2.0 or higher.
 
 This playbook was designed for Ubuntu Server 14.04 LTS.
 
