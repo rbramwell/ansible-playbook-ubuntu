@@ -83,6 +83,7 @@ Dependencies
 ------------
 
 -   [hswong3i.apache2](https://github.com/pantarei/ansible-role-apache2)
+-   [hswong3i.apache2\_vhosts](https://github.com/pantarei/ansible-role-apache2-vhosts)
 -   [hswong3i.apt](https://github.com/pantarei/ansible-role-apt)
 -   [hswong3i.hostname](https://github.com/pantarei/ansible-role-hostname)
 -   [hswong3i.java](https://github.com/pantarei/ansible-role-java)
@@ -90,6 +91,7 @@ Dependencies
 -   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
 -   [hswong3i.ntp](https://github.com/pantarei/ansible-role-ntp)
 -   [hswong3i.php](https://github.com/pantarei/ansible-role-php)
+-   [hswong3i.php\_vhosts](https://github.com/pantarei/ansible-role-php-vhosts)
 -   [hswong3i.postgresql](https://github.com/pantarei/ansible-role-postgresql)
 -   [hswong3i.tzdata](https://github.com/pantarei/ansible-role-tzdata)
 -   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
@@ -106,6 +108,6 @@ Author Information
 ------------------
 
 -   Wong Hoi Sing Edison
-    -   <a href="https://twitter.com/hswong3i" class="uri" class="uri">https://twitter.com/hswong3i</a>
-    -   <a href="https://github.com/hswong3i" class="uri" class="uri">https://github.com/hswong3i</a>
+    -   <https://twitter.com/hswong3i>
+    -   <https://github.com/hswong3i>
 

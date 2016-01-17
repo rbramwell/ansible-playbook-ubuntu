@@ -1,10 +1,19 @@
 ---
 # deployment playbook for ubuntu
 
-# core packages
+# basic packages
 - include: apt-core.yml
 - include: ufw-core.yml
 - include: hostname-core.yml
 - include: locales-core.yml
 - include: tzdata-core.yml
 - include: ntp-core.yml
+
+# service/shared packages
+- include: java-core.yml
+- include: apache2-core.yml
+- include: php-core.yml
+- include: mysql-core.yml
+- include: postgresql-core.yml
+- include: usermin-core.yml
+- include: webmin-core.yml
