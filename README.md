@@ -53,7 +53,7 @@ There are four main steps for running a customized AIO build:
 Start by cloning the ansible-playbook-ubuntu repository and changing
 into the repository root directory:
 
-    $ git clone https://github.com/pantarei/ansible-playbook-ubuntu.git \
+    $ git clone --recursive https://github.com/pantarei/ansible-playbook-ubuntu.git \
         /opt/ansible-playbook-ubuntu
     $ cd /opt/ansible-playbook-ubuntu
 
