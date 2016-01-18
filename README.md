@@ -77,7 +77,7 @@ as `full` at `group_vars/all`:
 
 Finally, run the plabooks by executing:
 
-    $ ansible-playbook -i hosts playbooks/run-aio-build.yml
+    $ ansible-playbook -i inventory/localhost playbooks/run-aio-build.yml
 
 Dependencies
 ------------
