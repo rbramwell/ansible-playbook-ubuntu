@@ -4,11 +4,5 @@
 # core packages
 - include: run-core-build.yml
 
-# service/shared packages
-- include: java-core.yml
-- include: apache2-core.yml
-- include: php-core.yml
-- include: mysql-core.yml
-- include: postgresql-core.yml
-- include: usermin-core.yml
-- include: webmin-core.yml
+# vhosts packages
+- include: run-vhosts-build.yml

@@ -5,14 +5,18 @@
   remote_user: root
   roles:
     - hswong3i.apache2
+    - hswong3i.apache2_vhosts
     - hswong3i.apt
     - hswong3i.hostname
     - hswong3i.java
     - hswong3i.locales
     - hswong3i.mysql
+    - hswong3i.mysql_vhosts
     - hswong3i.ntp
     - hswong3i.php
+    - hswong3i.php_vhosts
     - hswong3i.postgresql
+    - hswong3i.postgresql_vhosts
     - hswong3i.tzdata
     - hswong3i.ufw
     - hswong3i.usermin

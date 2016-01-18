@@ -1,0 +1,8 @@
+---
+# deployment playbook for ubuntu
+
+# vhosts packages
+- include: apache2-vhosts.yml
+- include: php-vhosts.yml
+- include: mysql-vhosts.yml
+- include: postgresql-vhosts.yml

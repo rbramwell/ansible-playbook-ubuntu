@@ -50,3 +50,19 @@
 	path = roles/hswong3i.postgresql
 	url = https://github.com/pantarei/ansible-role-postgresql.git
 	branch = master
+[submodule "roles/hswong3i.php_vhosts"]
+	path = roles/hswong3i.php_vhosts
+	url = https://github.com/pantarei/ansible-role-php-vhosts.git
+	branch = master
+[submodule "roles/hswong3i.apache2_vhosts"]
+	path = roles/hswong3i.apache2_vhosts
+	url = https://github.com/pantarei/ansible-role-apache2-vhosts.git
+	branch = master
+[submodule "roles/hswong3i.mysql_vhosts"]
+	path = roles/hswong3i.mysql_vhosts
+	url = https://github.com/pantarei/ansible-role-mysql-vhosts.git
+	branch = master
+[submodule "roles/hswong3i.postgresql_vhosts"]
+	path = roles/hswong3i.postgresql_vhosts
+	url = https://github.com/pantarei/ansible-role-postgresql-vhosts.git
+	branch = master
