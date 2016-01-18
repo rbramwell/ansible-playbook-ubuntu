@@ -7,7 +7,7 @@ cd $DIR/../
 
 # Generate a random password.
 PASSWD=`< /dev/urandom tr -dc A-Za-z0-9 | head -c8`
-SALT=`date | shasum -a 256 | sed 's/^\(\w*\).*$/\1/g'`
+SALT=`< /dev/urandom tr -dc A-Za-z0-9 | head -c16`
 
 # Prepare group_vars/all.
 TMP_VARS=`mktemp`
@@ -23,6 +23,7 @@ perl -i -p -e "s/^#(apt_upgrade):.*/\1: full/g" $TMP_VARS
 perl -i -p -e "s/^#(php_date_timezone):.*/\1: Etc\/UTC/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_date_timezone):.*/\1: Etc\/UTC/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_hash_salt):.*/\1: \"{{ apache2_vhosts_hash_salt }}\"/g" $TMP_VARS
+perl -i -p -e "s/^#(php_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(tzdata_timezone):.*/\1: Etc\/UTC/g" $TMP_VARS

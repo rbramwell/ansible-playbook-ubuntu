@@ -15,4 +15,4 @@ scripts/bootstrap-ansible.sh
 scripts/bootstrap-roles.sh
 scripts/bootstrap-vars.sh
 scripts/bootstrap-hosts.sh
-ansible-playbook -i hosts playbooks/run-aio-build.yml
+ansible-playbook -i inventory/localhost playbooks/run-aio-build.yml
