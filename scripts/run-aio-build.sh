@@ -13,6 +13,6 @@ cd /opt/ansible-playbook-ubuntu
 # Bootstrap Ansible then run all playbooks.
 scripts/bootstrap-ansible.sh
 scripts/bootstrap-roles.sh
-scripts/bootstrap-vars.sh
-scripts/bootstrap-hosts.sh
+scripts/bootstrap-group_vars.sh
+scripts/bootstrap-inventory.sh
 ansible-playbook -i inventory/localhost playbooks/run-aio-build.yml
