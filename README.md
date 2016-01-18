@@ -89,6 +89,7 @@ Dependencies
 -   [hswong3i.java](https://github.com/pantarei/ansible-role-java)
 -   [hswong3i.locales](https://github.com/pantarei/ansible-role-locales)
 -   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
+-   [hswong3i.mysql\_vhosts](https://github.com/pantarei/ansible-role-mysql-vhosts)
 -   [hswong3i.ntp](https://github.com/pantarei/ansible-role-ntp)
 -   [hswong3i.php](https://github.com/pantarei/ansible-role-php)
 -   [hswong3i.php\_vhosts](https://github.com/pantarei/ansible-role-php-vhosts)
