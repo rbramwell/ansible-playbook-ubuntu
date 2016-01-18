@@ -16,6 +16,7 @@
     - hswong3i.php
     - hswong3i.php_vhosts
     - hswong3i.postgresql
+    - hswong3i.postgresql_vhosts
     - hswong3i.tzdata
     - hswong3i.ufw
     - hswong3i.usermin

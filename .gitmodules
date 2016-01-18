@@ -62,3 +62,7 @@
 	path = roles/hswong3i.mysql_vhosts
 	url = https://github.com/pantarei/ansible-role-mysql-vhosts.git
 	branch = master
+[submodule "roles/hswong3i.postgresql_vhosts"]
+	path = roles/hswong3i.postgresql_vhosts
+	url = https://github.com/pantarei/ansible-role-postgresql-vhosts.git
+	branch = master

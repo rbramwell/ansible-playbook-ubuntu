@@ -94,6 +94,7 @@ Dependencies
 -   [hswong3i.php](https://github.com/pantarei/ansible-role-php)
 -   [hswong3i.php\_vhosts](https://github.com/pantarei/ansible-role-php-vhosts)
 -   [hswong3i.postgresql](https://github.com/pantarei/ansible-role-postgresql)
+-   [hswong3i.postgresql_vhosts](https://github.com/pantarei/ansible-role-postgresql-vhosts)
 -   [hswong3i.tzdata](https://github.com/pantarei/ansible-role-tzdata)
 -   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
 -   [hswong3i.usermin](https://github.com/pantarei/ansible-role-usermin)
