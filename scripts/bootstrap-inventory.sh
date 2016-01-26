@@ -12,7 +12,7 @@ find playbooks/*.yml -type f -exec cat {} \; | grep "hosts:" | perl -p -e  's/^.
 do
     cat >> $TMP_HOSTS <<-EOF
 [$line]
-localhost.localdomain	ansible_host=127.0.0.1
+localhost.localdomain	ansible_connection=local
 
 EOF
 done
