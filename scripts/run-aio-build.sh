@@ -12,7 +12,7 @@ cd /opt/ansible-playbook-ubuntu
 
 # Generate SSH key for localhost connection.
 echo -e 'y\n' | ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
-echo ~/.ssh/id_rsa >> ~/.ssh/authorized_keys
+cat ~/.ssh/id_rsa >> ~/.ssh/authorized_keys
 
 # Bootstrap Ansible then run all playbooks.
 scripts/bootstrap-ansible.sh
