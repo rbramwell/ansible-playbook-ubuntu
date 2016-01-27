@@ -4,7 +4,7 @@ set -o xtrace
 
 # Install basic packages for this script.
 apt-get update
-apt-get -y install git
+apt-get -y install git git-flow
 
 # GIT clone our playbook to CWD.
 git clone --recursive https://github.com/pantarei/ansible-playbook-ubuntu.git /opt/ansible-playbook-ubuntu
