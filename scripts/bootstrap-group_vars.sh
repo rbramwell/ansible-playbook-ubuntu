@@ -15,6 +15,7 @@ echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
 echo -en '\n' >> $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_document_root):.*/\1: \"{{ apache2_vhosts_home }}\/public_html\"/g" $TMP_VARS
+perl -i -p -e "s/^#(apache2_vhosts_handler_php):.*/\1: \"proxy:unix:/var/run/php/{{ apache2_vhosts_id }}_php7.0-fpm.sock|fcgi://localhost\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_hash_salt):.*/\1: \"$SALT\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_home):.*/\1: \"\/home\/{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_id):.*/\1: example/g" $TMP_VARS
