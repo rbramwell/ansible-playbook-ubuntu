@@ -2,4 +2,4 @@
 
 set -o xtrace
 
-ansible-playbook -i inventory/aio playbooks/setup-everything.yml
+ansible-playbook -i inventory/localhost.localdomain playbooks/setup-everything.yml

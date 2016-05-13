@@ -1,6 +1,7 @@
 ---
 
-- hosts: usermin
+- hosts: ubuntu
   remote_user: root
   roles:
     - hswong3i.usermin
+    - hswong3i.webmin

@@ -1,23 +1,11 @@
-# Updated on Fri May 13 10:28:38 HKT 2016
+# Updated on Fri May 13 15:23:46 HKT 2016
 [apache2]
-localhost.localdomain	ansible_connection=local
-
-[apt]
-localhost.localdomain	ansible_connection=local
-
-[hostname]
 localhost.localdomain	ansible_connection=local
 
 [java]
 localhost.localdomain	ansible_connection=local
 
-[locales]
-localhost.localdomain	ansible_connection=local
-
 [mysql]
-localhost.localdomain	ansible_connection=local
-
-[ntp]
 localhost.localdomain	ansible_connection=local
 
 [php]
@@ -26,15 +14,6 @@ localhost.localdomain	ansible_connection=local
 [postgresql]
 localhost.localdomain	ansible_connection=local
 
-[tzdata]
-localhost.localdomain	ansible_connection=local
-
-[ufw]
-localhost.localdomain	ansible_connection=local
-
-[usermin]
-localhost.localdomain	ansible_connection=local
-
-[webmin]
+[ubuntu]
 localhost.localdomain	ansible_connection=local
 

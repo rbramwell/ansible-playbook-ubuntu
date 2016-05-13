@@ -16,4 +16,4 @@ localhost.localdomain	ansible_connection=local
 
 EOF
 done
-cat $TMP_HOSTS >> inventory/aio
+cat $TMP_HOSTS >> inventory/localhost.localdomain
