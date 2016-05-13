@@ -1,2 +1,4 @@
 ---
 
+- include: usermin-install.yml
+- include: webmin-install.yml
