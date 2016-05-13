@@ -1,5 +1,4 @@
 ---
-# shared playbook for usermin setup
 
 - hosts: usermin
   remote_user: root

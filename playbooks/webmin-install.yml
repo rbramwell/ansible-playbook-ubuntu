@@ -1,5 +1,4 @@
 ---
-# shared playbook for webmin setup
 
 - hosts: webmin
   remote_user: root

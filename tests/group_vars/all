@@ -1,0 +1,42 @@
+# Updated on Fri May 13 10:29:28 HKT 2016
+apache2_http_port: "80"
+apache2_https_port: "443"
+apache2_vhosts_document_root: "{{ apache2_vhosts_home }}/public_html"
+apache2_vhosts_gid: ~
+apache2_vhosts_handler_php: "proxy:unix:/var/run/php/{{ apache2_vhosts_id }}_php7.0-fpm.sock|fcgi://localhost"
+apache2_vhosts_hash_salt: "FV7smKQFM6FGf8pD"
+apache2_vhosts_home: "/home/{{ apache2_vhosts_user }}"
+apache2_vhosts_http_port: "{{ apache2_http_port }}"
+apache2_vhosts_https_port: "{{ apache2_https_port }}"
+apache2_vhosts_id: "example"
+apache2_vhosts_pass: "Hp477ZcD"
+apache2_vhosts_server_alias: [
+  "www.example.com",
+  "*",
+]
+apache2_vhosts_server_name: "example.com"
+apache2_vhosts_uid: ~
+apache2_vhosts_user: "example"
+apt_cache_valid_time: "3600"
+apt_upgrade: "full"
+mysql_port: "3306"
+mysql_vhosts_id: "{{ apache2_vhosts_id }}"
+mysql_vhosts_pass: "{{ apache2_vhosts_pass }}"
+mysql_vhosts_user: "{{ apache2_vhosts_user }}"
+php_date_timezone: "Etc/UTC"
+php_vhosts_date_timezone: "{{ php_date_timezone }}"
+php_vhosts_gid: "{{ apache2_vhosts_gid }}"
+php_vhosts_hash_salt: "{{ apache2_vhosts_hash_salt }}"
+php_vhosts_home: "{{ apache2_vhosts_home }}"
+php_vhosts_id: "{{ apache2_vhosts_id }}"
+php_vhosts_pass: "{{ apache2_vhosts_pass }}"
+php_vhosts_session_save_path: "{{ apache2_vhosts_document_root }}/../tmp"
+php_vhosts_uid: "{{ apache2_vhosts_uid }}"
+php_vhosts_upload_tmp_dir: "{{ apache2_vhosts_document_root }}/../tmp"
+php_vhosts_user: "{{ apache2_vhosts_user }}"
+postgresql_port: "5432"
+postgresql_vhosts_id: "{{ apache2_vhosts_id }}"
+postgresql_vhosts_pass: "{{ apache2_vhosts_pass }}"
+postgresql_vhosts_user: "{{ apache2_vhosts_user }}"
+tzdata_timezone: "Etc/UTC"
+
