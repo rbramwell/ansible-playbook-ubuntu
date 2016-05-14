@@ -1,3 +1,4 @@
 ---
 
-- include: ubuntu-install.yml
+- include: usermin-install.yml
+- include: webmin-install.yml

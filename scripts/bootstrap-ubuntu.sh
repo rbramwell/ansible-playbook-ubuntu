@@ -51,4 +51,4 @@ perl -i -p -e "s/^#(postgresql_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" 
 perl -i -p -e "s/^#(postgresql_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(tzdata_timezone):.*/\1: \"Etc\/UTC\"/g" $TMP_VARS
-cat $TMP_VARS >> group_vars/all
+cat $TMP_VARS >> host_vars/ubuntu.aio

@@ -12,8 +12,8 @@ find playbooks/*.yml -type f -exec cat {} \; | grep "hosts:" | perl -p -e  's/^.
 do
     cat >> $TMP_HOSTS <<-EOF
 [$line]
-localhost.localdomain	ansible_connection=local
+ubuntu.aio	ansible_host=127.0.0.1
 
 EOF
 done
-cat $TMP_HOSTS >> inventory/localhost.localdomain
+cat $TMP_HOSTS >> inventory/ubuntu

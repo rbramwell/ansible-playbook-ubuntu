@@ -1,4 +1,4 @@
-# Updated on Fri May 13 16:15:44 HKT 2016
+# Updated on Sat May 14 22:02:51 HKT 2016
 [apache2]
 localhost.localdomain	ansible_connection=local
 
@@ -35,6 +35,9 @@ localhost.localdomain	ansible_connection=local
 [postgresql]
 localhost.localdomain	ansible_connection=local
 
-[ubuntu]
+[usermin]
+localhost.localdomain	ansible_connection=local
+
+[webmin]
 localhost.localdomain	ansible_connection=local
 
