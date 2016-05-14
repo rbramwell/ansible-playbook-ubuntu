@@ -25,15 +25,6 @@ All-in-one (AIO) builds are a great way to perform an Ubuntu build for
 
 Although AIO builds aren’t recommended for large production deployments, they’re great for smaller proof-of-concept deployments.
 
-AIO in One Step
----------------
-
-For a one-step build, there is a [convenient script](https://raw.githubusercontent.com/pantarei/ansible-playbook-ubuntu/master/scripts/run-aio-build.sh) within the ansible-playbook-ubuntu repository that will run a AIO build with defaults:
-
-    bash <(curl -sL https://raw.githubusercontent.com/pantarei/ansible-playbook-ubuntu/master/scripts/run-aio-build.sh)
-
-It’s advised to run this build within a terminal muxer, like tmux or screen, so that you don’t lose your progress if you’re disconnected from your terminal session.
-
 AIO with Customization
 ----------------------
 
@@ -46,7 +37,7 @@ There are four main steps for running a customized AIO build:
 
 Start by cloning the ansible-playbook-ubuntu repository and changing into the repository root directory:
 
-    $ git clone --recursive https://github.com/pantarei/ansible-playbook-ubuntu.git \
+    $ git clone https://github.com/pantarei/ansible-playbook-ubuntu \
         /opt/ansible-playbook-ubuntu
     $ cd /opt/ansible-playbook-ubuntu
 
@@ -56,9 +47,7 @@ Next bootstrap Ansible by executing:
 
 Now we can bootstrap Ansible's roles, vars and hosts by executing:
 
-    $ scripts/bootstrap-roles.sh
-    $ scripts/bootstrap-group_vars.sh
-    $ scripts/bootstrap-inventory.sh
+    $ scripts/bootstrap-aio.sh
 
 By default the scripts deploy only general Ubuntu setup. At this point you may optionally adjuct which services are deployed within your AIO build. Look at the `group_vars/all` and `inventory/localhost` for more details. For example, if you'd like to upgrade your Ubuntu set the `apt_upgrade` as `full` at `group_vars/all`:
 
@@ -66,7 +55,7 @@ By default the scripts deploy only general Ubuntu setup. At this point you may o
 
 Finally, run the plabooks by executing:
 
-    $ ansible-playbook -i inventory/localhost playbooks/run-aio-build.yml
+    $ scripts/run-playbooks.sh
 
 Dependencies
 ------------
@@ -74,10 +63,18 @@ Dependencies
 -   [hswong3i.apache2](https://github.com/pantarei/ansible-role-apache2)
 -   [hswong3i.apache2\_vhosts](https://github.com/pantarei/ansible-role-apache2-vhosts)
 -   [hswong3i.apt](https://github.com/pantarei/ansible-role-apt)
+-   [hswong3i.bamboo](https://github.com/pantarei/ansible-role-bamboo)
+-   [hswong3i.bitbucket](https://github.com/pantarei/ansible-role-bitbucket)
+-   [hswong3i.confluence](https://github.com/pantarei/ansible-role-confluence)
+-   [hswong3i.crowd](https://github.com/pantarei/ansible-role-crowd)
+-   [hswong3i.drupal](https://github.com/pantarei/ansible-role-drupal)
+-   [hswong3i.fisheye](https://github.com/pantarei/ansible-role-fisheye)
 -   [hswong3i.hostname](https://github.com/pantarei/ansible-role-hostname)
 -   [hswong3i.java](https://github.com/pantarei/ansible-role-java)
+-   [hswong3i.jira](https://github.com/pantarei/ansible-role-jira)
 -   [hswong3i.locales](https://github.com/pantarei/ansible-role-locales)
 -   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
+-   [hswong3i.mysql\_connector\_java](https://github.com/pantarei/ansible-role-mysql-connector-java)
 -   [hswong3i.mysql\_vhosts](https://github.com/pantarei/ansible-role-mysql-vhosts)
 -   [hswong3i.ntp](https://github.com/pantarei/ansible-role-ntp)
 -   [hswong3i.php](https://github.com/pantarei/ansible-role-php)
@@ -99,6 +96,6 @@ Author Information
 ------------------
 
 -   Wong Hoi Sing Edison
-    -   <https://twitter.com/hswong3i>
-    -   <https://github.com/hswong3i>
+    -   <a href="https://twitter.com/hswong3i" class="uri" class="uri">https://twitter.com/hswong3i</a>
+    -   <a href="https://github.com/hswong3i" class="uri" class="uri">https://github.com/hswong3i</a>
 
