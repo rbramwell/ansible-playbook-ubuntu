@@ -18,7 +18,7 @@ apache2_vhosts_server_name: "example.com"
 apache2_vhosts_uid: ~
 apache2_vhosts_user: "example"
 apt_cache_valid_time: "3600"
-apt_upgrade: "full"
+apt_upgrade: "no"
 mysql_port: "3306"
 mysql_vhosts_id: "{{ apache2_vhosts_id }}"
 mysql_vhosts_pass: "{{ apache2_vhosts_pass }}"
