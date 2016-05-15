@@ -1,1 +1,43 @@
-localhost   ansible_connection=local
+# Updated on Sat May 14 22:02:51 HKT 2016
+[apache2]
+localhost.localdomain	ansible_connection=local
+
+[bamboo]
+localhost.localdomain	ansible_connection=local
+
+[bitbucket]
+localhost.localdomain	ansible_connection=local
+
+[confluence]
+localhost.localdomain	ansible_connection=local
+
+[crowd]
+localhost.localdomain	ansible_connection=local
+
+[drupal]
+localhost.localdomain	ansible_connection=local
+
+[fisheye]
+localhost.localdomain	ansible_connection=local
+
+[java]
+localhost.localdomain	ansible_connection=local
+
+[jira]
+localhost.localdomain	ansible_connection=local
+
+[mysql]
+localhost.localdomain	ansible_connection=local
+
+[php]
+localhost.localdomain	ansible_connection=local
+
+[postgresql]
+localhost.localdomain	ansible_connection=local
+
+[usermin]
+localhost.localdomain	ansible_connection=local
+
+[webmin]
+localhost.localdomain	ansible_connection=local
+

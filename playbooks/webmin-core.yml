@@ -1,7 +1,0 @@
----
-# shared playbook for webmin setup
-
-- hosts: webmin
-  remote_user: root
-  roles:
-    - hswong3i.webmin

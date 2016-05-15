@@ -1,5 +1,4 @@
 ---
-# shared playbook for java setup
 
 - hosts: java
   remote_user: root

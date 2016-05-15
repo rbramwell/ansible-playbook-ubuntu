@@ -1,0 +1,9 @@
+---
+
+- hosts: webmin
+  remote_user: root
+  roles:
+    - hswong3i.webmin
+    - role: hswong3i.ufw
+      ufw_to_port:
+        - { to_port: "{{ webmin_port }}", proto: "tcp", rule: "allow" }
