@@ -1,7 +1,0 @@
----
-# shared playbook for php setup
-
-- hosts: php
-  remote_user: root
-  roles:
-    - hswong3i.php_vhosts

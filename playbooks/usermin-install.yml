@@ -1,0 +1,9 @@
+---
+
+- hosts: usermin
+  remote_user: root
+  roles:
+    - hswong3i.usermin
+    - role: hswong3i.ufw
+      ufw_to_port:
+        - { to_port: "{{ usermin_port }}", proto: "tcp", rule: "allow" }

@@ -1,7 +1,0 @@
----
-# shared playbook for apache2 setup
-
-- hosts: apache2
-  remote_user: root
-  roles:
-    - hswong3i.apache2

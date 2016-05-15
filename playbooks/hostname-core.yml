@@ -1,7 +1,0 @@
----
-# shared playbook for hostname setup
-
-- hosts: hostname
-  remote_user: root
-  roles:
-    - hswong3i.hostname

@@ -1,8 +1,0 @@
----
-# deployment playbook for ubuntu
-
-# core packages
-- include: run-core-build.yml
-
-# vhosts packages
-- include: run-vhosts-build.yml
