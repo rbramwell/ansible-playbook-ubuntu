@@ -37,6 +37,7 @@ perl -i -p -e "s/^#(mysql_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $
 perl -i -p -e "s/^#(mysql_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(php_date_timezone):.*/\1: \"Etc\/UTC\"/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_date_timezone):.*/\1: \"{{ php_date_timezone }}\"/g" $TMP_VARS
+perl -i -p -e "s/^#(php_vhosts_document_root):.*/\1: \"{{ apache2_vhosts_document_root }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_gid):.*/\1: \"{{ apache2_vhosts_gid }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_hash_salt):.*/\1: \"{{ apache2_vhosts_hash_salt }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(php_vhosts_home):.*/\1: \"{{ apache2_vhosts_home }}\"/g" $TMP_VARS
