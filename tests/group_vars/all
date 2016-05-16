@@ -1,15 +1,15 @@
-# Updated on Mon May 16 19:10:59 HKT 2016
+# Updated on Mon May 16 21:34:42 HKT 2016
 apache2_http_port: "80"
 apache2_https_port: "443"
 apache2_vhosts_document_root: "{{ apache2_vhosts_home }}/public_html"
 apache2_vhosts_gid: ~
 apache2_vhosts_handler_php: "proxy:unix:/var/run/php/{{ apache2_vhosts_id }}_php7.0-fpm.sock|fcgi://localhost"
-apache2_vhosts_hash_salt: "BznnaI3AHX9T27Wy"
+apache2_vhosts_hash_salt: "zz6fg9jtlG2TYJgI"
 apache2_vhosts_home: "/home/{{ apache2_vhosts_user }}"
 apache2_vhosts_http_port: "{{ apache2_http_port }}"
 apache2_vhosts_https_port: "{{ apache2_https_port }}"
 apache2_vhosts_id: "example"
-apache2_vhosts_pass: "Z4asVngS"
+apache2_vhosts_pass: "KAi3fi0L"
 apache2_vhosts_server_alias: [
   "www.example.com",
   "*",
@@ -25,6 +25,7 @@ mysql_vhosts_pass: "{{ apache2_vhosts_pass }}"
 mysql_vhosts_user: "{{ apache2_vhosts_user }}"
 php_date_timezone: "Etc/UTC"
 php_vhosts_date_timezone: "{{ php_date_timezone }}"
+php_vhosts_document_root: "{{ apache2_vhosts_document_root }}"
 php_vhosts_gid: "{{ apache2_vhosts_gid }}"
 php_vhosts_hash_salt: "{{ apache2_vhosts_hash_salt }}"
 php_vhosts_home: "{{ apache2_vhosts_home }}"
