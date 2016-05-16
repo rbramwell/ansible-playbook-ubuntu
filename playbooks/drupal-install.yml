@@ -1,25 +1,5 @@
 ---
 
-- hosts: apache2
-  remote_user: root
-  roles:
-    - hswong3i.apache2_vhosts
-
-- hosts: mysql
-  remote_user: root
-  roles:
-    - hswong3i.mysql_vhosts
-
-- hosts: postgresql
-  remote_user: root
-  roles:
-    - hswong3i.postgresql_vhosts
-
-- hosts: php
-  remote_user: root
-  roles:
-    - hswong3i.php_vhosts
-
 - hosts: drupal
   remote_user: root
   roles:
