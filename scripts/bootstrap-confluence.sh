@@ -23,8 +23,8 @@ perl -i -p -e "s/^#(apache2_vhosts_http_port):.*/\1: \"{{ apache2_http_port }}\"
 perl -i -p -e "s/^#(apache2_vhosts_https_port):.*/\1: \"{{ apache2_https_port }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_id):.*/\1: \"confluence\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_pass):.*/\1: \"$PASSWD\"/g" $TMP_VARS
-perl -i -p -e "s/^#(apache2_vhosts_proxy_pass):.*/#\1: \"\/   http:\/\/localhost:{{ confluence_connector_port }}\/\"/g" $TMP_VARS
-perl -i -p -e "s/^#(apache2_vhosts_proxy_pass_reverse):.*/#\1: \"\/   http:\/\/localhost:{{ confluence_connector_port }}\/\"/g" $TMP_VARS
+perl -i -p -e "s/^#(apache2_vhosts_proxy_pass):.*/\1: \"\/   http:\/\/localhost:{{ confluence_connector_port }}\/\"/g" $TMP_VARS
+perl -i -p -e "s/^#(apache2_vhosts_proxy_pass_reverse):.*/\1: \"\/   http:\/\/localhost:{{ confluence_connector_port }}\/\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_proxy_preserve_host):.*/\1: \"Off\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_proxy_request):.*/\1: \"On\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_proxy_via):.*/\1: \"On\"/g" $TMP_VARS
@@ -39,6 +39,7 @@ perl -i -p -e "s/^#(confluence_gid):.*/\1: \"{{ apache2_vhosts_gid }}\"/g" $TMP_
 perl -i -p -e "s/^#(confluence_hash_salt):.*/\1: \"{{ apache2_vhosts_hash_salt }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(confluence_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(confluence_proxy_name):.*/\1: \"{{ apache2_vhosts_server_name }}\"/g" $TMP_VARS
+perl -i -p -e "s/^#(confluence_scheme):.*/\1: \"http\"/g" $TMP_VARS
 perl -i -p -e "s/^#(confluence_server_port):.*/\1: \"8000\"/g" $TMP_VARS
 perl -i -p -e "s/^#(confluence_uid):.*/\1: \"{{ apache2_vhosts_uid }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(confluence_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS

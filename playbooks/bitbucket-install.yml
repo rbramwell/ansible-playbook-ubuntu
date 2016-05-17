@@ -1,10 +1,5 @@
 ---
 
-- hosts: apache2
-  remote_user: root
-  roles:
-    - hswong3i.apache2_vhosts
-
 - hosts: mysql
   remote_user: root
   roles:
@@ -24,3 +19,8 @@
       ufw_to_port:
         - { to_port: "{{ bitbucket_connector_port }}", proto: "tcp", rule: "allow" }
         - { to_port: "{{ bitbucket_server_port }}", proto: "tcp", rule: "allow" }
+
+- hosts: apache2
+  remote_user: root
+  roles:
+    - hswong3i.apache2_vhosts
