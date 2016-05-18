@@ -1,15 +1,15 @@
-# Updated on Tue May 17 23:23:29 HKT 2016
+# Updated on Wed May 18 14:22:36 HKT 2016
 apache2_http_port: "80"
 apache2_https_port: "443"
 apache2_vhosts_document_root: "{{ apache2_vhosts_home }}/public_html"
 apache2_vhosts_gid: ~
 apache2_vhosts_handler_php: "proxy:unix:/var/run/php/{{ apache2_vhosts_id }}_php7.0-fpm.sock|fcgi://localhost"
-apache2_vhosts_hash_salt: "szybFxCl7rvGuTAd"
+apache2_vhosts_hash_salt: "ANrPuaf15cl5rucp"
 apache2_vhosts_home: "/home/{{ apache2_vhosts_user }}"
 apache2_vhosts_http_port: "{{ apache2_http_port }}"
 apache2_vhosts_https_port: "{{ apache2_https_port }}"
 apache2_vhosts_id: "example"
-apache2_vhosts_pass: "Edjc3Y5P"
+apache2_vhosts_pass: "fsl7HWzA"
 apache2_vhosts_server_alias: [
   "www.example.com",
   "*",
