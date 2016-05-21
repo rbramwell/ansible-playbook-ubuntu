@@ -4,3 +4,9 @@
   remote_user: root
   roles:
     - hswong3i.php
+    - role: hswong3i.composer
+      composer_global_require:
+        - "drush/drush:@stable"
+        - "fabpot/php-cs-fixer:@stable"
+        - "phpunit/phpunit:@stable"
+        - "sami/sami:@stable"
