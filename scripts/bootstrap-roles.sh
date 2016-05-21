@@ -23,6 +23,8 @@ ls -1d $DIR/../roles/* | while read line; do
     git branch -r | grep origin | grep -v HEAD | while read branch; do
         branch=`echo $branch | sed 's/^origin\///g'`
         git checkout $branch
+        git reset --hard @{upstream}
+        git clean -fdx
         git pull
     done
 
