@@ -1,0 +1,6 @@
+---
+
+- hosts: composer
+  remote_user: root
+  roles:
+    - hswong3i.composer
