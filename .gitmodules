@@ -98,3 +98,7 @@
 	path = roles/hswong3i.mysql_connector_java
 	url = https://github.com/pantarei/ansible-role-mysql-connector-java.git
 	branch = master
+[submodule "roles/hswong3i.composer"]
+	path = roles/hswong3i.composer
+	url = https://github.com/pantarei/ansible-role-composer.git
+	branch = master
