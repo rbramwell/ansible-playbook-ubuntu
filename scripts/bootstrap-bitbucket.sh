@@ -19,6 +19,7 @@ perl -i -p -e "s/^#(apache2_https_port):.*/\1: \"443\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_document_root):.*/\1: ~/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_gid):.*/\1: ~/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_hash_salt):.*/\1: \"$SALT\"/g" $TMP_VARS
+perl -i -p -e "s/^#(apache2_vhosts_home):.*/\1: \"\/var\/lib\/bitbucket\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_http_port):.*/\1: \"{{ apache2_http_port }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_https_port):.*/\1: \"{{ apache2_https_port }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_id):.*/\1: \"bitbucket\"/g" $TMP_VARS
@@ -37,6 +38,7 @@ perl -i -p -e "s/^#(apt_upgrade):.*/\1: \"full\"/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_connector_port):.*/\1: \"7990\"/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_gid):.*/\1: \"{{ apache2_vhosts_gid }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_hash_salt):.*/\1: \"{{ apache2_vhosts_hash_salt }}\"/g" $TMP_VARS
+perl -i -p -e "s/^#(bitbucket_home):.*/\1: \"{{ apache2_vhosts_home }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_proxy_name):.*/\1: \"{{ apache2_vhosts_server_name }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(bitbucket_scheme):.*/\1: \"http\"/g" $TMP_VARS
