@@ -49,6 +49,5 @@ perl -i -p -e "s/^#(php_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TM
 perl -i -p -e "s/^#(postgresql_port):.*/\1: \"5432\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
-perl -i -p -e "s/^#(postgresql_vhosts_privs):.*/\1: [\n  { priv: \"ALL\", role_attr_flags: \"SUPERUSER\" },\n]/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
-cat $TMP_VARS >> host_vars/drupal.aio
+cat $TMP_VARS >> host_vars/vhosts.aio
