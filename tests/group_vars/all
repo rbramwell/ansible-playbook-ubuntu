@@ -1,16 +1,16 @@
-# Updated on Sat Jun  4 21:14:21 HKT 2016
+# Updated on Fri Jun 10 10:32:52 HKT 2016
 apache2_http_port: "80"
 apache2_https_port: "443"
 apache2_vhosts_base: "{{ apache2_vhosts_home }}"
 apache2_vhosts_document_root: "{{ apache2_vhosts_base }}/public_html"
 apache2_vhosts_gid: ~
 apache2_vhosts_handler_php: "proxy:unix:/var/run/php/{{ apache2_vhosts_id }}_php7.0-fpm.sock|fcgi://localhost"
-apache2_vhosts_hash_salt: "MTL220tsjOGX7kpP"
+apache2_vhosts_hash_salt: "2tfuLcDZJPTrS8Qm"
 apache2_vhosts_home: "/home/{{ apache2_vhosts_user }}"
 apache2_vhosts_http_port: "{{ apache2_http_port }}"
 apache2_vhosts_https_port: "{{ apache2_https_port }}"
 apache2_vhosts_id: "example"
-apache2_vhosts_pass: "olICl59N"
+apache2_vhosts_pass: "WQwYCh7J"
 apache2_vhosts_server_alias: [
   "www.example.com",
   "*",
