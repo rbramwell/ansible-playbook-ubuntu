@@ -42,6 +42,7 @@ perl -i -p -e "s/^#(drupal_trusted_host_patterns):.*/\1: \"{{ [ apache2_vhosts_s
 perl -i -p -e "s/^#(drupal_uid):.*/\1: \"{{ apache2_vhosts_uid }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(drupal_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_port):.*/\1: \"3306\"/g" $TMP_VARS
+perl -i -p -e "s/^#(mysql_root_pass):.*/\1: \"$PASSWD\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
