@@ -48,6 +48,7 @@ perl -i -p -e "s/^#(crowd_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VAR
 perl -i -p -e "s/^#(mysql_connector_java_dest):.*/\1: \"\/usr\/share\/crowd\/apache-tomcat\/lib\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_connector_java_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_port):.*/\1: \"3306\"/g" $TMP_VARS
+perl -i -p -e "s/^#(mysql_root_pass):.*/\1: \"$PASSWD\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_collation):.*/\1: \"utf8_bin\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_encoding):.*/\1: \"utf8\"/g" $TMP_VARS
 perl -i -p -e "s/^#(mysql_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" $TMP_VARS
