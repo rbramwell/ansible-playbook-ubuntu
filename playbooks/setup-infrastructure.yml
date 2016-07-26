@@ -2,6 +2,9 @@
 
 - include: apache2-install.yml
 - include: java-install.yml
+- include: memcached-install.yml
 - include: mysql-install.yml
+- include: nfs-install.yml
 - include: php-install.yml
 - include: postgresql-install.yml
+- include: varnish-install.yml

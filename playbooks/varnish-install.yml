@@ -1,0 +1,10 @@
+---
+
+- hosts: varnish
+  remote_user: root
+  roles:
+    - hswong3i.varnish
+    - role: hswong3i.ufw
+      ufw_to_port:
+        - { to_port: "{{ varnish_admin_port }}", proto: "tcp", rule: "allow" }
+        - { to_port: "{{ varnish_listen_port }}", proto: "tcp", rule: "allow" }

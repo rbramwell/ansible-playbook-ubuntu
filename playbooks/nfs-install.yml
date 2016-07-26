@@ -1,0 +1,12 @@
+---
+
+- hosts: nfs
+  remote_user: root
+  roles:
+    - hswong3i.nfs
+    - role: hswong3i.ufw
+      ufw_to_port:
+        - { to_port: "111", proto: "tcp", rule: "allow" }
+        - { to_port: "111", proto: "udp", rule: "allow" }
+        - { to_port: "2049", proto: "tcp", rule: "allow" }
+        - { to_port: "2049", proto: "udp", rule: "allow" }

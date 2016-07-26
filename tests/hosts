@@ -1,4 +1,4 @@
-# Updated on Sat Jul 23 22:17:23 HKT 2016
+# Updated on Tue Jul 26 21:45:06 HKT 2016
 [apache2]
 localhost.localdomain	ansible_connection=local
 
@@ -26,7 +26,13 @@ localhost.localdomain	ansible_connection=local
 [jira]
 localhost.localdomain	ansible_connection=local
 
+[memcached]
+localhost.localdomain	ansible_connection=local
+
 [mysql]
+localhost.localdomain	ansible_connection=local
+
+[nfs]
 localhost.localdomain	ansible_connection=local
 
 [php]
@@ -36,6 +42,9 @@ localhost.localdomain	ansible_connection=local
 localhost.localdomain	ansible_connection=local
 
 [usermin]
+localhost.localdomain	ansible_connection=local
+
+[varnish]
 localhost.localdomain	ansible_connection=local
 
 [webmin]
