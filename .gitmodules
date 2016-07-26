@@ -111,3 +111,6 @@
 [submodule "roles/hswong3i.nfs"]
 	path = roles/hswong3i.nfs
 	url = https://github.com/pantarei/ansible-role-nfs.git
+[submodule "roles/hswong3i.cachefilesd"]
+	path = roles/hswong3i.cachefilesd
+	url = https://github.com/pantarei/ansible-role-cachefilesd.git
