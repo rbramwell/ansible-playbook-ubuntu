@@ -105,3 +105,6 @@
 [submodule "roles/hswong3i.varnish"]
 	path = roles/hswong3i.varnish
 	url = https://github.com/pantarei/ansible-role-varnish.git
+[submodule "roles/hswong3i.memcached"]
+	path = roles/hswong3i.memcached
+	url = https://github.com/pantarei/ansible-role-memcached.git

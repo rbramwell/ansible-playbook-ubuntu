@@ -1,0 +1,9 @@
+---
+
+- hosts: memcached
+  remote_user: root
+  roles:
+    - hswong3i.memcached
+    - role: hswong3i.ufw
+      ufw_to_port:
+        - { to_port: "{{ memcached_listen_port }}", proto: "tcp", rule: "allow" }
