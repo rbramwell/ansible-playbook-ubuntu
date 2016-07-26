@@ -108,3 +108,6 @@
 [submodule "roles/hswong3i.memcached"]
 	path = roles/hswong3i.memcached
 	url = https://github.com/pantarei/ansible-role-memcached.git
+[submodule "roles/hswong3i.nfs"]
+	path = roles/hswong3i.nfs
+	url = https://github.com/pantarei/ansible-role-nfs.git
