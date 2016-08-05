@@ -2,8 +2,8 @@
 
 set -o xtrace
 
-rm -rf host_vars/*
-rm -rf inventory/*
+rm -rf host_vars/ubuntu.aio
+rm -rf inventory/ubuntu.aio
 
 scripts/bootstrap-inventory.sh
 scripts/bootstrap-ubuntu.sh
