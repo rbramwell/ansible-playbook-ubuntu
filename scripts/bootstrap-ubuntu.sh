@@ -26,7 +26,7 @@ perl -i -p -e "s/^#(apache2_vhosts_http_port):.*/\1: \"{{ apache2_http_port }}\"
 perl -i -p -e "s/^#(apache2_vhosts_https_port):.*/\1: \"{{ apache2_https_port }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_id):.*/\1: \"example\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_pass):.*/\1: \"$PASSWD\"/g" $TMP_VARS
-perl -i -p -e "s/^#(apache2_vhosts_server_alias):.*/\1: [\n  \"www.example.com\",\n  \"*\",\n]/g" $TMP_VARS
+perl -i -p -e "s/^#(apache2_vhosts_server_alias):.*/\1: [ \"www.example.com\", \"*\" ]/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_server_name):.*/\1: \"example.com\"/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_uid):.*/\1: ~/g" $TMP_VARS
 perl -i -p -e "s/^#(apache2_vhosts_user):.*/\1: \"example\"/g" $TMP_VARS
@@ -52,4 +52,5 @@ perl -i -p -e "s/^#(postgresql_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" 
 perl -i -p -e "s/^#(postgresql_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(tzdata_timezone):.*/\1: \"Etc\/UTC\"/g" $TMP_VARS
+perl -i -p -e "s/^#(varnish_backend):.*/\1: [ { name: \"default\", host: \"127.0.0.1\", port: \"80\" } ]/g" $TMP_VARS
 cat $TMP_VARS >> host_vars/ubuntu.aio
