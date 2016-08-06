@@ -118,3 +118,11 @@
 	path = roles/hswong3i.cachefilesd
 	url = https://github.com/pantarei/ansible-role-cachefilesd.git
 	branch = master
+[submodule "roles/hswong3i.mariadb"]
+	path = roles/hswong3i.mariadb
+	url = https://github.com/pantarei/ansible-role-mariadb.git
+	branch = master
+[submodule "roles/hswong3i.mariadb_vhosts"]
+	path = roles/hswong3i.mariadb_vhosts
+	url = https://github.com/pantarei/ansible-role-mariadb-vhosts.git
+	branch = master
