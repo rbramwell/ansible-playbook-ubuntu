@@ -10,6 +10,11 @@
   roles:
     - hswong3i.mysql_vhosts
 
+- hosts: mariadb
+  remote_user: root
+  roles:
+    - hswong3i.mariadb_vhosts
+
 - hosts: postgresql
   remote_user: root
   roles:

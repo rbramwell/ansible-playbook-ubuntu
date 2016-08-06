@@ -1,0 +1,9 @@
+---
+
+- hosts: mariadb
+  remote_user: root
+  roles:
+    - hswong3i.mariadb
+    - role: hswong3i.ufw
+      ufw_to_port:
+        - { to_port: "{{ mysql_port }}", proto: "tcp", rule: "allow" }
