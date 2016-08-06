@@ -1,27 +1,24 @@
-# Updated on Tue Jul 26 23:53:38 HKT 2016
+# Updated on Sat Aug  6 10:57:02 HKT 2016
 apache2_http_port: "80"
 apache2_https_port: "443"
 apache2_vhosts_base: "{{ apache2_vhosts_home }}"
 apache2_vhosts_document_root: "{{ apache2_vhosts_base }}/public_html"
 apache2_vhosts_gid: ~
 apache2_vhosts_handler_php: "proxy:unix:/var/run/php/{{ apache2_vhosts_id }}_php7.0-fpm.sock|fcgi://localhost"
-apache2_vhosts_hash_salt: ""
+apache2_vhosts_hash_salt: "rKfX5gC1Kj3Uwul9"
 apache2_vhosts_home: "/home/{{ apache2_vhosts_user }}"
 apache2_vhosts_http_port: "{{ apache2_http_port }}"
 apache2_vhosts_https_port: "{{ apache2_https_port }}"
 apache2_vhosts_id: "example"
-apache2_vhosts_pass: ""
-apache2_vhosts_server_alias: [
-  "www.example.com",
-  "*",
-]
+apache2_vhosts_pass: "f7Cj2zoG"
+apache2_vhosts_server_alias: [ "www.example.com", "*" ]
 apache2_vhosts_server_name: "example.com"
 apache2_vhosts_uid: ~
 apache2_vhosts_user: "example"
 apt_cache_valid_time: "3600"
 apt_upgrade: "no"
 mysql_port: "3306"
-mysql_root_pass: ""
+mysql_root_pass: "f7Cj2zoG"
 mysql_vhosts_id: "{{ apache2_vhosts_id }}"
 mysql_vhosts_pass: "{{ apache2_vhosts_pass }}"
 mysql_vhosts_user: "{{ apache2_vhosts_user }}"
@@ -40,4 +37,5 @@ postgresql_vhosts_id: "{{ apache2_vhosts_id }}"
 postgresql_vhosts_pass: "{{ apache2_vhosts_pass }}"
 postgresql_vhosts_user: "{{ apache2_vhosts_user }}"
 tzdata_timezone: "Etc/UTC"
+varnish_backend: [ { name: "default", host: "127.0.0.1", port: "80" } ]
 

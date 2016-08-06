@@ -65,6 +65,8 @@ Dependencies
 -   [hswong3i.apt](https://github.com/pantarei/ansible-role-apt)
 -   [hswong3i.bamboo](https://github.com/pantarei/ansible-role-bamboo)
 -   [hswong3i.bitbucket](https://github.com/pantarei/ansible-role-bitbucket)
+-   [hswong3i.cachefilesd](https://github.com/pantarei/ansible-role-cachefilesd)
+-   [hswong3i.composer](https://github.com/pantarei/ansible-role-composer)
 -   [hswong3i.confluence](https://github.com/pantarei/ansible-role-confluence)
 -   [hswong3i.crowd](https://github.com/pantarei/ansible-role-crowd)
 -   [hswong3i.drupal](https://github.com/pantarei/ansible-role-drupal)
@@ -73,9 +75,11 @@ Dependencies
 -   [hswong3i.java](https://github.com/pantarei/ansible-role-java)
 -   [hswong3i.jira](https://github.com/pantarei/ansible-role-jira)
 -   [hswong3i.locales](https://github.com/pantarei/ansible-role-locales)
+-   [hswong3i.memcached](https://github.com/pantarei/ansible-role-memcached)
 -   [hswong3i.mysql](https://github.com/pantarei/ansible-role-mysql)
 -   [hswong3i.mysql\_connector\_java](https://github.com/pantarei/ansible-role-mysql-connector-java)
 -   [hswong3i.mysql\_vhosts](https://github.com/pantarei/ansible-role-mysql-vhosts)
+-   [hswong3i.nfs](https://github.com/pantarei/ansible-role-nfs)
 -   [hswong3i.ntp](https://github.com/pantarei/ansible-role-ntp)
 -   [hswong3i.php](https://github.com/pantarei/ansible-role-php)
 -   [hswong3i.php\_vhosts](https://github.com/pantarei/ansible-role-php-vhosts)
@@ -84,6 +88,7 @@ Dependencies
 -   [hswong3i.tzdata](https://github.com/pantarei/ansible-role-tzdata)
 -   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
 -   [hswong3i.usermin](https://github.com/pantarei/ansible-role-usermin)
+-   [hswong3i.varnish](https://github.com/pantarei/ansible-role-varnish)
 -   [hswong3i.webmin](https://github.com/pantarei/ansible-role-webmin)
 
 License
