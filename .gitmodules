@@ -105,12 +105,16 @@
 [submodule "roles/hswong3i.varnish"]
 	path = roles/hswong3i.varnish
 	url = https://github.com/pantarei/ansible-role-varnish.git
+	branch = master
 [submodule "roles/hswong3i.memcached"]
 	path = roles/hswong3i.memcached
 	url = https://github.com/pantarei/ansible-role-memcached.git
+	branch = master
 [submodule "roles/hswong3i.nfs"]
 	path = roles/hswong3i.nfs
 	url = https://github.com/pantarei/ansible-role-nfs.git
+	branch = master
 [submodule "roles/hswong3i.cachefilesd"]
 	path = roles/hswong3i.cachefilesd
 	url = https://github.com/pantarei/ansible-role-cachefilesd.git
+	branch = master
