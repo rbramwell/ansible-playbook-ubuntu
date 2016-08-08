@@ -8,6 +8,7 @@
     - hswong3i.locales
     - hswong3i.tzdata
     - hswong3i.ntp
+    - hswong3i.mount
     - role: hswong3i.ufw
       ufw_interface:
         - { interface: "lo", direction: "in", rule: "allow" }
