@@ -7,3 +7,7 @@
     - role: hswong3i.ufw
       ufw_to_port:
         - { to_port: "{{ mysql_port }}", proto: "tcp", rule: "allow" }
+        - { to_port: "4444", proto: "tcp", rule: "allow" }
+        - { to_port: "4567", proto: "tcp", rule: "allow" }
+        - { to_port: "4567", proto: "udp", rule: "allow" }
+        - { to_port: "4568", proto: "tcp", rule: "allow" }
