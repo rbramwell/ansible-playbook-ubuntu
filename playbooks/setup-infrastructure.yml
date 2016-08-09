@@ -7,6 +7,7 @@
 - include: memcached-install.yml
 - include: mysql-install.yml
 - include: nfs-install.yml
+- include: nfs_ganesha-install.yml
 - include: php-install.yml
 - include: postgresql-install.yml
 - include: varnish-install.yml
