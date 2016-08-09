@@ -1,6 +1,0 @@
----
-
-- hosts: ganesha
-  remote_user: root
-  roles:
-    - hswong3i.ganesha

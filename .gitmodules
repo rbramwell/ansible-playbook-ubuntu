@@ -134,7 +134,3 @@
 	path = roles/hswong3i.gluster
 	url = https://github.com/pantarei/ansible-role-gluster.git
 	branch = master
-[submodule "roles/hswong3i.ganesha"]
-	path = roles/hswong3i.ganesha
-	url = https://github.com/pantarei/ansible-role-ganesha.git
-	branch = master
