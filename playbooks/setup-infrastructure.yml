@@ -2,12 +2,12 @@
 
 - include: apache2-install.yml
 - include: cachefilesd-install.yml
+- include: ganesha-install.yml
 - include: java-install.yml
 - include: mariadb-install.yml
 - include: memcached-install.yml
 - include: mysql-install.yml
 - include: nfs-install.yml
-- include: nfs_ganesha-install.yml
 - include: php-install.yml
 - include: postgresql-install.yml
 - include: varnish-install.yml
