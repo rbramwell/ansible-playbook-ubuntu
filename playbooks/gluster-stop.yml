@@ -1,0 +1,16 @@
+---
+
+- hosts: gluster
+  remote_user: root
+  tasks:
+    - name: stop all volumes
+      gluster_volume:
+        name: "{{ item.name }}"
+        state: "stopped"
+      with_items: "{{ gluster_volume }}"
+      run_once: yes
+    
+    - name: stop all nodes
+      service:
+        name: "glusterfs-server"
+        state: "stopped"

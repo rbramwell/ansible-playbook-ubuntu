@@ -1,0 +1,16 @@
+---
+
+- hosts: gluster
+  remote_user: root
+  tasks:
+    - name: start all nodes
+      service:
+        name: "glusterfs-server"
+        state: "started"
+
+    - name: start all volumes
+      gluster_volume:
+        name: "{{ item.name }}"
+        state: "started"
+      with_items: "{{ gluster_volume }}"
+      run_once: yes
