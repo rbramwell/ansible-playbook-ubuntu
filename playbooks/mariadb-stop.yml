@@ -1,0 +1,16 @@
+---
+
+- hosts: mariadb
+  remote_user: root
+  tasks:
+    - name: stop all slave nodes
+      service:
+        name: "mysql"
+        state: "stopped"
+      when: inventory_hostname != play_hosts[0]
+    
+    - name: stop master nodes
+      service:
+        name: "mysql"
+        state: "stopped"
+      when: inventory_hostname == play_hosts[0]
