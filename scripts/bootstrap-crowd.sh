@@ -9,7 +9,7 @@ cd $DIR/../
 PASSWD=`< /dev/urandom tr -dc A-Za-z0-9 | head -c8`
 SALT=`< /dev/urandom tr -dc A-Za-z0-9 | head -c16`
 
-# Prepare group_vars/all.
+# Prepare inventory/host_vars/crowd.aio.
 TMP_VARS=`mktemp`
 echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
@@ -62,4 +62,4 @@ perl -i -p -e "s/^#(postgresql_vhosts_lc_ctype):.*/\1: \"C\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_template):.*/\1: \"template0\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
-cat $TMP_VARS >> host_vars/crowd.aio
+cat $TMP_VARS >> inventory/host_vars/crowd.aio
