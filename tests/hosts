@@ -1,4 +1,4 @@
-# Updated on Sat Aug  6 10:57:01 HKT 2016
+# Updated on Tue Aug  9 15:27:22 HKT 2016
 [apache2]
 localhost.localdomain	ansible_connection=local
 
@@ -23,10 +23,16 @@ localhost.localdomain	ansible_connection=local
 [fisheye]
 localhost.localdomain	ansible_connection=local
 
+[gluster]
+localhost.localdomain	ansible_connection=local
+
 [java]
 localhost.localdomain	ansible_connection=local
 
 [jira]
+localhost.localdomain	ansible_connection=local
+
+[mariadb]
 localhost.localdomain	ansible_connection=local
 
 [memcached]

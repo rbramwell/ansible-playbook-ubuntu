@@ -3,7 +3,13 @@
 - hosts: mysql
   remote_user: root
   roles:
-    - hswong3i.mysql_vhosts
+    - role: hswong3i.mysql_vhosts
+      when: groups['mariadb'] is not defined or inventory_hostname not in groups['mariadb']
+
+- hosts: mariadb
+  remote_user: root
+  roles:
+    - hswong3i.mariadb_vhosts
 
 - hosts: postgresql
   remote_user: root

@@ -126,3 +126,11 @@
 	path = roles/hswong3i.mariadb_vhosts
 	url = https://github.com/pantarei/ansible-role-mariadb-vhosts.git
 	branch = master
+[submodule "roles/hswong3i.mount"]
+	path = roles/hswong3i.mount
+	url = https://github.com/pantarei/ansible-role-mount.git
+	branch = master
+[submodule "roles/hswong3i.gluster"]
+	path = roles/hswong3i.gluster
+	url = https://github.com/pantarei/ansible-role-gluster.git
+	branch = master
