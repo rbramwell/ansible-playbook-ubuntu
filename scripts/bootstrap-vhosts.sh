@@ -9,7 +9,7 @@ cd $DIR/../
 PASSWD=`< /dev/urandom tr -dc A-Za-z0-9 | head -c8`
 SALT=`< /dev/urandom tr -dc A-Za-z0-9 | head -c16`
 
-# Prepare inventory/host_vars/vhosts.aio.
+# Prepare group_vars/all.
 TMP_VARS=`mktemp`
 echo -e "# Updated on `date`" >> $TMP_VARS
 find roles/*/defaults/*.yml -type f -exec cat {} \; | egrep -e '^\w*:' | sort -u | sed 's/^/#/g;s/\[$/[]/g;s/{$/{}/g' >> $TMP_VARS
@@ -50,4 +50,6 @@ perl -i -p -e "s/^#(postgresql_port):.*/\1: \"5432\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_id):.*/\1: \"{{ apache2_vhosts_id }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_pass):.*/\1: \"{{ apache2_vhosts_pass }}\"/g" $TMP_VARS
 perl -i -p -e "s/^#(postgresql_vhosts_user):.*/\1: \"{{ apache2_vhosts_user }}\"/g" $TMP_VARS
-cat $TMP_VARS >> inventory/host_vars/vhosts.aio
+mkdir -p inventory/vhosts.aio/group_vars
+mkdir -p inventory/vhosts.aio/host_vars
+cat $TMP_VARS >> inventory/vhosts.aio/group_vars/all
