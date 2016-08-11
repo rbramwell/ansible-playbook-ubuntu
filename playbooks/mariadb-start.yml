@@ -3,23 +3,13 @@
 - hosts: mariadb
   remote_user: root
   tasks:
-    - name: stop all slave nodes
-      service:
-        name: "mysql"
-        state: "stopped"
-      when: inventory_hostname != play_hosts[0]
-    
-    - name: stop master nodes
-      service:
-        name: "mysql"
-        state: "stopped"
-      when: inventory_hostname == play_hosts[0]
-
     - name: bootstrap a new cluster
-      service:
-        name: "mysql"
-        state: "started"
-        arguments: "--wsrep-new-cluster"
+      shell: |
+        /usr/bin/mysqld_safe --wsrep-new-cluster > /dev/null 2>&1 &
+        for i in $(seq 1 60); do
+          sleep 1
+          pgrep mysqld && break;
+        done
       when: inventory_hostname == play_hosts[0]
 
     - name: add slave nodes to the cluster
@@ -27,3 +17,19 @@
         name: "mysql"
         state: "started"
       when: inventory_hostname != play_hosts[0]
+    
+    - name: stop master node
+      shell: |
+        killall -15 mysqld
+        for i in $(seq 1 60); do
+          sleep 1
+          pgrep mysqld || break;
+        done
+      when: inventory_hostname == play_hosts[0]
+
+    - name: restart master node
+      service:
+        name: "mysql"
+        state: "started"
+      when: inventory_hostname == play_hosts[0]
+    
