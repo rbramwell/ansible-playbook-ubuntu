@@ -27,7 +27,7 @@
         done
       when: inventory_hostname == play_hosts[0]
 
-    - name: readd master node to the cluster
+    - name: re-add master node to the cluster
       service:
         name: "mysql"
         state: "started"
