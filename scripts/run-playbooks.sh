@@ -2,4 +2,4 @@
 
 set -o xtrace
 
-ansible-playbook -i inventory/ubuntu.aio playbooks/setup-everything.yml
+ansible-playbook -i inventory/ubuntu.aio/hosts playbooks/setup-everything.yml
