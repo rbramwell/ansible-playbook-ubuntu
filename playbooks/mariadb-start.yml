@@ -3,9 +3,9 @@
 - hosts: mariadb
   remote_user: root
   tasks:
-    - name: bootstrap a new cluster
+    - name: bootstrap a new cluster with mysqld_safe
       shell: |
-        /usr/bin/mysqld_safe --wsrep-new-cluster > /dev/null 2>&1 &
+        mysqld_safe --wsrep-new-cluster > /dev/null 2>&1 &
         for i in $(seq 1 60); do
           sleep 1
           pgrep mysqld && break;
@@ -27,7 +27,7 @@
         done
       when: inventory_hostname == play_hosts[0]
 
-    - name: restart master node
+    - name: readd master node to the cluster
       service:
         name: "mysql"
         state: "started"
