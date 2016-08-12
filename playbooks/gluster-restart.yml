@@ -7,6 +7,7 @@
       gluster_volume:
         name: "{{ item.name }}"
         state: "stopped"
+        force: "yes"
       with_items: "{{ gluster_volume }}"
       run_once: yes
       ignore_errors: yes
@@ -20,6 +21,7 @@
       gluster_volume:
         name: "{{ item.name }}"
         state: "started"
+        force: "yes"
       with_items: "{{ gluster_volume }}"
       run_once: yes
       ignore_errors: yes
