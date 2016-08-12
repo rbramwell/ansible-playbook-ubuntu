@@ -10,4 +10,6 @@
 - include: nfs-install.yml
 - include: php-install.yml
 - include: postgresql-install.yml
+- include: usermin-install.yml
 - include: varnish-install.yml
+- include: webmin-install.yml

@@ -6,14 +6,3 @@
 
 # Then setup remote mount to gluster/nfs volume.
 - include: mount.yml
-
-# Finally, other else services.
-- include: bamboo-install.yml
-- include: bitbucket-install.yml
-- include: confluence-install.yml
-- include: crowd-install.yml
-- include: drupal-install.yml
-- include: fisheye-install.yml
-- include: jira-install.yml
-- include: usermin-install.yml
-- include: webmin-install.yml
