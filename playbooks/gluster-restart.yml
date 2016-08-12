@@ -9,7 +9,8 @@
         state: "stopped"
       with_items: "{{ gluster_volume }}"
       run_once: yes
-    
+      ignore_errors: yes
+
     - name: restart all nodes
       service:
         name: "glusterfs-server"
@@ -21,3 +22,4 @@
         state: "started"
       with_items: "{{ gluster_volume }}"
       run_once: yes
+      ignore_errors: yes

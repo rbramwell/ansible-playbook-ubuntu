@@ -9,7 +9,8 @@
         state: "stopped"
       with_items: "{{ gluster_volume }}"
       run_once: yes
-    
+      ignore_erros: yes
+
     - name: stop all nodes
       service:
         name: "glusterfs-server"
