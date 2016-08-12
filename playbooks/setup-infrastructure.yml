@@ -2,6 +2,7 @@
 
 - include: apache2-install.yml
 - include: cachefilesd-install.yml
+- include: gluster-install.yml
 - include: java-install.yml
 - include: mariadb-install.yml
 - include: memcached-install.yml
