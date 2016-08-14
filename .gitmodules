@@ -138,11 +138,15 @@
 	path = roles/hswong3i.gluster_volume
 	url = https://github.com/pantarei/ansible-role-gluster-volume.git
 	branch = master
-[submodule "roles/hswong3i.nfs_exports"]
-	path = roles/hswong3i.nfs_exports
-	url = https://github.com/pantarei/ansible-role-nfs-exports.git
-	branch = master
 [submodule "roles/hswong3i.ganesha"]
 	path = roles/hswong3i.ganesha
 	url = https://github.com/pantarei/ansible-role-ganesha.git
+	branch = master
+[submodule "roles/hswong3i.nfs_export"]
+	path = roles/hswong3i.nfs_export
+	url = https://github.com/pantarei/ansible-role-nfs-export.git
+	branch = master
+[submodule "roles/hswong3i.ganesha_export"]
+	path = roles/hswong3i.ganesha_export
+	url = https://github.com/pantarei/ansible-role-ganesha-export.git
 	branch = master

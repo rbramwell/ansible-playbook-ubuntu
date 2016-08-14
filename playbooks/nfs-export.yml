@@ -3,4 +3,4 @@
 - hosts: nfs
   remote_user: root
   roles:
-    - hswong3i.nfs_exports
+    - hswong3i.nfs_export
