@@ -1,4 +1,4 @@
-# Updated on Thu Aug 11 17:31:12 HKT 2016
+# Updated on Fri Aug 12 16:29:47 HKT 2016
 [apache2]
 localhost.localdomain	ansible_connection=local
 
@@ -36,6 +36,9 @@ localhost.localdomain	ansible_connection=local
 localhost.localdomain	ansible_connection=local
 
 [memcached]
+localhost.localdomain	ansible_connection=local
+
+[mount]
 localhost.localdomain	ansible_connection=local
 
 [mysql]

@@ -1,4 +1,8 @@
 ---
 
-- include: usermin-install.yml
-- include: webmin-install.yml
+# First setup gluster/nfs volume as mount point.
+- include: nfs-exports.yml
+- include: gluster-volume.yml
+
+# Then setup remote mount to gluster/nfs volume.
+- include: mount.yml

@@ -1,16 +1,16 @@
-# Updated on Thu Aug 11 17:31:13 HKT 2016
+# Updated on Fri Aug 12 16:29:48 HKT 2016
 apache2_http_port: "80"
 apache2_https_port: "443"
 apache2_vhosts_base: "{{ apache2_vhosts_home }}"
 apache2_vhosts_document_root: "{{ apache2_vhosts_base }}/public_html"
 apache2_vhosts_gid: ~
 apache2_vhosts_handler_php: "proxy:unix:/var/run/php/{{ apache2_vhosts_id }}_php7.0-fpm.sock|fcgi://localhost"
-apache2_vhosts_hash_salt: "2lqrsrw75BQp8AbW"
+apache2_vhosts_hash_salt: "esYPP1cpHWSuQWH9"
 apache2_vhosts_home: "/home/{{ apache2_vhosts_user }}"
 apache2_vhosts_http_port: "{{ apache2_http_port }}"
 apache2_vhosts_https_port: "{{ apache2_https_port }}"
 apache2_vhosts_id: "example"
-apache2_vhosts_pass: "JfiotMMa"
+apache2_vhosts_pass: "tdXKh1Ur"
 apache2_vhosts_server_alias: [ "www.example.com", "*" ]
 apache2_vhosts_server_name: "example.com"
 apache2_vhosts_uid: ~
@@ -18,7 +18,7 @@ apache2_vhosts_user: "example"
 apt_cache_valid_time: "3600"
 apt_upgrade: "no"
 mysql_port: "3306"
-mysql_root_pass: "JfiotMMa"
+mysql_root_pass: "tdXKh1Ur"
 mysql_vhosts_id: "{{ apache2_vhosts_id }}"
 mysql_vhosts_pass: "{{ apache2_vhosts_pass }}"
 mysql_vhosts_user: "{{ apache2_vhosts_user }}"
