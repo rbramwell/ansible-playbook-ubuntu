@@ -142,3 +142,7 @@
 	path = roles/hswong3i.nfs_exports
 	url = https://github.com/pantarei/ansible-role-nfs-exports.git
 	branch = master
+[submodule "roles/hswong3i.ganesha"]
+	path = roles/hswong3i.ganesha
+	url = https://github.com/pantarei/ansible-role-ganesha.git
+	branch = master

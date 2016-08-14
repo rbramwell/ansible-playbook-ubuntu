@@ -1,4 +1,13 @@
 ---
 
-- include: gluster-stop.yml
-- include: gluster-start.yml
+- hosts: gluster
+  remote_user: root
+  serial: 1
+  tasks:
+    - name: restart node
+      service:
+        name: "{{ item }}"
+        state: "restarted"
+      with_items:
+        - "rpcbind"
+        - "glusterfs-server"
