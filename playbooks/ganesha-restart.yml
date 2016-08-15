@@ -1,10 +1,10 @@
 ---
 
-- hosts: gluster
+- hosts: ganesha
   remote_user: root
   serial: 1
   tasks:
     - name: restart node
       service:
-        name: "glusterfs-server"
+        name: "nfs-ganesha"
         state: "restarted"

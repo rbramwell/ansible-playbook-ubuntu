@@ -5,11 +5,8 @@
   tasks:
     - name: start all nodes
       service:
-        name: "{{ item }}"
+        name: "glusterfs-server"
         state: "started"
-      with_items:
-        - "rpcbind"
-        - "glusterfs-server"
 
     - name: start all volumes
       gluster_volume:
