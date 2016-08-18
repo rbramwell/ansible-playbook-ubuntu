@@ -150,3 +150,7 @@
 	path = roles/hswong3i.ganesha_export
 	url = https://github.com/pantarei/ansible-role-ganesha-export.git
 	branch = master
+[submodule "roles/hswong3i.haproxy"]
+	path = roles/hswong3i.haproxy
+	url = https://github.com/pantarei/ansible-role-haproxy.git
+	branch = master

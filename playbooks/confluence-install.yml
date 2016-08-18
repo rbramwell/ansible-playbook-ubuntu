@@ -22,7 +22,7 @@
     - hswong3i.confluence
     - hswong3i.mysql_connector_java
     - role: hswong3i.ufw
-      ufw_to_port:
+      ufw:
         - { to_port: "{{ confluence_connector_port }}", proto: "tcp", rule: "allow" }
         - { to_port: "{{ confluence_server_port }}", proto: "tcp", rule: "allow" }
 

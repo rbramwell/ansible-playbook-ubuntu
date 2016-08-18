@@ -5,7 +5,7 @@
   roles:
     - hswong3i.mariadb
     - role: hswong3i.ufw
-      ufw_to_port:
+      ufw:
         - { to_port: "{{ mysql_port }}", proto: "tcp", rule: "allow" }
         - { to_port: "4444", proto: "tcp", rule: "allow" }
         - { to_port: "4567", proto: "tcp", rule: "allow" }
