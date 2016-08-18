@@ -1,4 +1,4 @@
-# Updated on Fri Aug 12 16:29:47 HKT 2016
+# Updated on Thu Aug 18 18:07:59 HKT 2016
 [apache2]
 localhost.localdomain	ansible_connection=local
 
@@ -23,7 +23,13 @@ localhost.localdomain	ansible_connection=local
 [fisheye]
 localhost.localdomain	ansible_connection=local
 
+[ganesha]
+localhost.localdomain	ansible_connection=local
+
 [gluster]
+localhost.localdomain	ansible_connection=local
+
+[haproxy]
 localhost.localdomain	ansible_connection=local
 
 [java]
