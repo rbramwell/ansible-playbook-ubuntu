@@ -1,0 +1,12 @@
+---
+
+- hosts: php
+  remote_user: root
+  tasks:
+    - name: start all nodes
+      service:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      with_items:
+        - { name: "php5.6-fpm", state: "started" }
+        - { name: "php7.0-fpm", state: "started" }

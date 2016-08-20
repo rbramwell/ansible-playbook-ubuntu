@@ -1,0 +1,13 @@
+---
+
+- hosts: php
+  remote_user: root
+  serial: 1
+  tasks:
+    - name: restart node
+      service:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      with_items:
+        - { name: "php5.6-fpm", state: "restarted" }
+        - { name: "php7.0-fpm", state: "restarted" }
