@@ -1,0 +1,9 @@
+---
+
+- hosts: apache2
+  remote_user: root
+  tasks:
+    - name: start all nodes
+      service:
+        name: "apache2"
+        state: "started"

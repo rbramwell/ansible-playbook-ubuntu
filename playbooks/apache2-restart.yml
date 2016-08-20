@@ -1,0 +1,10 @@
+---
+
+- hosts: apache2
+  remote_user: root
+  serial: 1
+  tasks:
+    - name: restart node
+      service:
+        name: "apache2"
+        state: "restarted"
