@@ -154,3 +154,7 @@
 	path = roles/hswong3i.haproxy
 	url = https://github.com/pantarei/ansible-role-haproxy.git
 	branch = master
+[submodule "roles/hswong3i.ansible"]
+	path = roles/hswong3i.ansible
+	url = https://github.com/pantarei/ansible-role-ansible.git
+	branch = master

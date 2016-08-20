@@ -1,5 +1,6 @@
 ---
 
+- include: ansible-install.yml
 - include: apache2-install.yml
 - include: cachefilesd-install.yml
 - include: ganesha-install.yml

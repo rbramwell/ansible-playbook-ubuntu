@@ -1,4 +1,7 @@
-# Updated on Thu Aug 18 18:07:59 HKT 2016
+# Updated on Sat Aug 20 15:28:16 HKT 2016
+[ansible]
+localhost.localdomain	ansible_connection=local
+
 [apache2]
 localhost.localdomain	ansible_connection=local
 
