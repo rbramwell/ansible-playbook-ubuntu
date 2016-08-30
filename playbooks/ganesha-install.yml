@@ -6,7 +6,4 @@
     - hswong3i.ganesha
     - role: hswong3i.ufw
       ufw:
-        - { to_port: "111", proto: "tcp", rule: "allow" }
-        - { to_port: "111", proto: "udp", rule: "allow" }
         - { to_port: "2049", proto: "tcp", rule: "allow" }
-        - { to_port: "2049", proto: "udp", rule: "allow" }
