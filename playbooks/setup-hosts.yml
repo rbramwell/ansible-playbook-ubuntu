@@ -9,6 +9,7 @@
         cache_valid_time: "3600"
         update_cache: "yes"
         upgrade: "full"
+      tags: hswong3i.apt
 
 - hosts: all
   remote_user: root
@@ -40,6 +41,7 @@
         - { direction: "routed", policy: "allow" }
         - { logging: "on" }
         - { state: "enabled" }
+      tags: hswong3i.ufw
 
 - hosts: all
   remote_user: root
