@@ -2,14 +2,32 @@
 
 - hosts: all
   remote_user: root
-  roles:
-    - hswong3i.apt
-    - hswong3i.hostname
-    - hswong3i.locales
-    - hswong3i.tzdata
-    - hswong3i.ntp
-    - role: hswong3i.ufw
+  serial: 1
+  tasks:
+    - name: apt-get dist-upgrade
+      apt:
+        cache_valid_time: "3600"
+        update_cache: "yes"
+        upgrade: "full"
+
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: setup ufw
       ufw:
+        direction: "{{ item.direction | default(None) or omit }}"
+        from_ip: "{{ item.from_ip | default(None) or omit }}"
+        from_port: "{{ item.from_port | default(None) or omit }}"
+        interface: "{{ item.interface | default(None) or omit }}"
+        logging: "{{ item.logging | default(None) or omit }}"
+        policy: "{{ item.policy | default(None) or omit }}"
+        proto: "{{ item.proto | default(None) or omit }}"
+        route: "{{ item.route | default(None) or omit }}"
+        rule: "{{ item.rule | default(None) or omit }}"
+        state: "{{ item.state | default(None) or omit }}"
+        to_ip: "{{ item.to_ip | default(None) or omit }}"
+        to_port: "{{ item.to_port | default(None) or omit }}"
+      with_items:
         - { interface: "lo", direction: "in", rule: "allow" }
         - { from_ip: "224.0.0.0/4", rule: "allow" }
         - { from_ip: "10.0.0.0/8", rule: "allow" }
@@ -22,3 +40,13 @@
         - { direction: "routed", policy: "allow" }
         - { logging: "on" }
         - { state: "enabled" }
+
+- hosts: all
+  remote_user: root
+  roles:
+    - hswong3i.apt
+    - hswong3i.hostname
+    - hswong3i.locales
+    - hswong3i.tzdata
+    - hswong3i.ntp
+    - hswong3i.ufw
