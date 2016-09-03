@@ -1,0 +1,6 @@
+---
+
+- hosts: apache2_vhosts
+  remote_user: root
+  roles:
+    - hswong3i.apache2_vhosts

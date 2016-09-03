@@ -3,9 +3,7 @@
 - hosts: mysql
   remote_user: root
   roles:
-    - role: hswong3i.mysql
-      when: groups['mariadb'] is not defined or inventory_hostname not in groups['mariadb']
+    - hswong3i.mysql
     - role: hswong3i.ufw
       ufw:
         - { to_port: "{{ mysql_port }}", proto: "tcp", rule: "allow" }
-      when: groups['mariadb'] is not defined or inventory_hostname not in groups['mariadb']

@@ -1,0 +1,6 @@
+---
+
+- hosts: mariadb_vhosts
+  remote_user: root
+  roles:
+    - hswong3i.mariadb_vhosts

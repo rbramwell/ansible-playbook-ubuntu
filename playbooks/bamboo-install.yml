@@ -1,21 +1,5 @@
 ---
 
-- hosts: mysql
-  remote_user: root
-  roles:
-    - role: hswong3i.mysql_vhosts
-      when: groups['mariadb'] is not defined or inventory_hostname not in groups['mariadb']
-
-- hosts: mariadb
-  remote_user: root
-  roles:
-    - hswong3i.mariadb_vhosts
-
-- hosts: postgresql
-  remote_user: root
-  roles:
-    - hswong3i.postgresql_vhosts
-
 - hosts: bamboo
   remote_user: root
   roles:
@@ -25,8 +9,3 @@
       ufw:
         - { to_port: "{{ bamboo_connector_port }}", proto: "tcp", rule: "allow" }
         - { to_port: "{{ bamboo_server_port }}", proto: "tcp", rule: "allow" }
-
-- hosts: apache2
-  remote_user: root
-  roles:
-    - hswong3i.apache2_vhosts

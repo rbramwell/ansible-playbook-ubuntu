@@ -1,8 +1,11 @@
-# Updated on Sat Aug 20 15:28:16 HKT 2016
+# Updated on Sun Sep  4 00:38:12 HKT 2016
 [ansible]
 localhost.localdomain	ansible_connection=local
 
 [apache2]
+localhost.localdomain	ansible_connection=local
+
+[apache2_vhosts]
 localhost.localdomain	ansible_connection=local
 
 [bamboo]
@@ -44,6 +47,9 @@ localhost.localdomain	ansible_connection=local
 [mariadb]
 localhost.localdomain	ansible_connection=local
 
+[mariadb_vhosts]
+localhost.localdomain	ansible_connection=local
+
 [memcached]
 localhost.localdomain	ansible_connection=local
 
@@ -53,13 +59,22 @@ localhost.localdomain	ansible_connection=local
 [mysql]
 localhost.localdomain	ansible_connection=local
 
+[mysql_vhosts]
+localhost.localdomain	ansible_connection=local
+
 [nfs]
 localhost.localdomain	ansible_connection=local
 
 [php]
 localhost.localdomain	ansible_connection=local
 
+[php_vhosts]
+localhost.localdomain	ansible_connection=local
+
 [postgresql]
+localhost.localdomain	ansible_connection=local
+
+[postgresql_vhosts]
 localhost.localdomain	ansible_connection=local
 
 [usermin]

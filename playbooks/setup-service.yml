@@ -1,11 +1,27 @@
 ---
 
-# First setup gluster volume.
+# Setup gluster volume.
 - include: gluster-volume.yml
 
-# Then setup ganesha/nfs export as mount point.
+# Setup ganesha/nfs export as mount point.
 - include: ganesha-export.yml
 - include: nfs-export.yml
 
-# Finally setup remote mount to ganesha/nfs export.
+# Setup remote mount to ganesha/nfs export.
 - include: mount.yml
+
+# Setup vhosts services.
+- include: apache2-vhosts.yml
+- include: mariadb-vhosts.yml
+- include: mysql-vhosts.yml
+- include: php-vhosts.yml
+- include: postgresql-vhosts.yml
+
+# Setup other else services.
+- include: bamboo-install.yml
+- include: bitbucket-install.yml
+- include: confluence-install.yml
+- include: crowd-install.yml
+- include: drupal-install.yml
+- include: fisheye-install.yml
+- include: jira-install.yml
