@@ -1,4 +1,5 @@
 ---
 # test file for ubuntu
 
-- include: ../playbooks/setup-everything.yml
+- include: ../playbooks/setup-hosts.yml
+- include: ../playbooks/setup-infrastructure.yml
