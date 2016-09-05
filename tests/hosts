@@ -5,28 +5,7 @@ localhost.localdomain	ansible_connection=local
 [apache2]
 localhost.localdomain	ansible_connection=local
 
-[apache2_vhosts]
-localhost.localdomain	ansible_connection=local
-
-[bamboo]
-localhost.localdomain	ansible_connection=local
-
-[bitbucket]
-localhost.localdomain	ansible_connection=local
-
 [cachefilesd]
-localhost.localdomain	ansible_connection=local
-
-[confluence]
-localhost.localdomain	ansible_connection=local
-
-[crowd]
-localhost.localdomain	ansible_connection=local
-
-[drupal]
-localhost.localdomain	ansible_connection=local
-
-[fisheye]
 localhost.localdomain	ansible_connection=local
 
 [ganesha]
@@ -38,43 +17,16 @@ localhost.localdomain	ansible_connection=local
 [haproxy]
 localhost.localdomain	ansible_connection=local
 
-[java]
-localhost.localdomain	ansible_connection=local
-
-[jira]
-localhost.localdomain	ansible_connection=local
-
 [mariadb]
-localhost.localdomain	ansible_connection=local
-
-[mariadb_vhosts]
 localhost.localdomain	ansible_connection=local
 
 [memcached]
 localhost.localdomain	ansible_connection=local
 
-[mount]
-localhost.localdomain	ansible_connection=local
-
-[mysql]
-localhost.localdomain	ansible_connection=local
-
-[mysql_vhosts]
-localhost.localdomain	ansible_connection=local
-
-[nfs]
-localhost.localdomain	ansible_connection=local
-
 [php]
 localhost.localdomain	ansible_connection=local
 
-[php_vhosts]
-localhost.localdomain	ansible_connection=local
-
 [postgresql]
-localhost.localdomain	ansible_connection=local
-
-[postgresql_vhosts]
 localhost.localdomain	ansible_connection=local
 
 [usermin]
