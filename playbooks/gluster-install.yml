@@ -4,8 +4,3 @@
   remote_user: root
   roles:
     - hswong3i.gluster
-    - role: hswong3i.ufw
-      ufw:
-        - { to_port: "24007:24008", proto: "tcp", rule: "allow" }
-        - { to_port: "38465:38467", proto: "tcp", rule: "allow" }
-        - { to_port: "49152:49251", proto: "tcp", rule: "allow" }
