@@ -10,3 +10,4 @@
       with_items:
         - { name: "php5.6-fpm", state: "stopped" }
         - { name: "php7.0-fpm", state: "stopped" }
+        - { name: "php7.1-fpm", state: "stopped" }
