@@ -1,0 +1,9 @@
+---
+
+- hosts: mysql
+  remote_user: root
+  tasks:
+    - name: stop all nodes
+      service:
+        name: "mysql"
+        state: "stopped"

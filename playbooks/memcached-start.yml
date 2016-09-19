@@ -1,0 +1,9 @@
+---
+
+- hosts: memcached
+  remote_user: root
+  tasks:
+    - name: start all nodes
+      service:
+        name: "memcached"
+        state: "started"

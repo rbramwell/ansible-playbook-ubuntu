@@ -1,0 +1,10 @@
+---
+
+- hosts: haproxy
+  remote_user: root
+  serial: 1
+  tasks:
+    - name: restart node
+      service:
+        name: "haproxy"
+        state: "restarted"

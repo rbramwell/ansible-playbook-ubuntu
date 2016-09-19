@@ -1,0 +1,9 @@
+---
+
+- hosts: varnish
+  remote_user: root
+  tasks:
+    - name: stop all nodes
+      service:
+        name: "varnish"
+        state: "stopped"

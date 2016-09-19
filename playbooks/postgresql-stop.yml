@@ -1,0 +1,9 @@
+---
+
+- hosts: postgresql
+  remote_user: root
+  tasks:
+    - name: stop all nodes
+      service:
+        name: "postgresql"
+        state: "stopped"

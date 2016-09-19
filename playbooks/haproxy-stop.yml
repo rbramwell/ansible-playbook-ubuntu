@@ -1,0 +1,9 @@
+---
+
+- hosts: haproxy
+  remote_user: root
+  tasks:
+    - name: stop all nodes
+      service:
+        name: "haproxy"
+        state: "stopped"
