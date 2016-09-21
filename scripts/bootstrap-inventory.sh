@@ -17,4 +17,4 @@ ubuntu.aio	ansible_host=127.0.0.1
 EOF
 done
 mkdir -p inventory/ubuntu.aio
-cat $TMP_HOSTS >> inventory/ubuntu.aio/hosts
+cat $TMP_HOSTS >> inventory/ubuntu.aio/hosts.aio
