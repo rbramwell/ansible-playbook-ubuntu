@@ -10,14 +10,7 @@
 # Setup remote mount to ganesha/nfs export.
 - include: mount.yml
 
-# Setup vhosts services.
-- include: apache2-vhosts.yml
-- include: mariadb-vhosts.yml
-- include: mysql-vhosts.yml
-- include: php-vhosts.yml
-- include: postgresql-vhosts.yml
-
-# Setup other else services.
+# Setup specific services.
 - include: bamboo-install.yml
 - include: bitbucket-install.yml
 - include: confluence-install.yml
@@ -25,3 +18,10 @@
 - include: drupal-install.yml
 - include: fisheye-install.yml
 - include: jira-install.yml
+
+# Setup vhosts services.
+- include: apache2-vhosts.yml
+- include: mariadb-vhosts.yml
+- include: mysql-vhosts.yml
+- include: php-vhosts.yml
+- include: postgresql-vhosts.yml
