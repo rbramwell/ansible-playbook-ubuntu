@@ -3,7 +3,14 @@
 - hosts: mariadb
   remote_user: root
   tasks:
-    - name: bootstrap a new cluster with mysqld_safe
+    - name: ensure master node can bootstrap cluster
+      lineinfile:
+        dest: "/var/lib/mysql/grastate.dat"
+        regexp: "^safe_to_bootstrap:"
+        line: "safe_to_bootstrap: 1"
+      when: inventory_hostname == play_hosts[0]
+
+    - name: bootstrap a new cluster on master node
       shell: |
         mysqld_safe --wsrep-new-cluster > /dev/null 2>&1 &
         for i in $(seq 1 60); do
@@ -17,7 +24,7 @@
         name: "mysql"
         state: "started"
       when: inventory_hostname != play_hosts[0]
-    
+
     - name: stop master node
       shell: |
         killall -15 mysqld
@@ -32,4 +39,3 @@
         name: "mysql"
         state: "started"
       when: inventory_hostname == play_hosts[0]
-    

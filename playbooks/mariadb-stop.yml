@@ -8,9 +8,16 @@
         name: "mysql"
         state: "stopped"
       when: inventory_hostname != play_hosts[0]
-    
+
     - name: stop master nodes
       service:
         name: "mysql"
         state: "stopped"
+      when: inventory_hostname == play_hosts[0]
+
+    - name: ensure master node can bootstrap cluster
+      lineinfile:
+        dest: "/var/lib/mysql/grastate.dat"
+        regexp: "^safe_to_bootstrap:"
+        line: "safe_to_bootstrap: 1"
       when: inventory_hostname == play_hosts[0]
